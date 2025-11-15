@@ -23,8 +23,8 @@ mcp.registerTool(
     const output = { result };
     return {
       content: [{
-        type: 'json',
-        json: output
+        type: 'text',
+        text: JSON.stringify(output, null, 2)
       }],
       structuredContent: output
     };
