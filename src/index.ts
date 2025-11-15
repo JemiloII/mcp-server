@@ -1,25 +1,27 @@
+import { fileURLToPath } from 'url';
 import { Hono, type Context, type Handler } from 'hono';
+import { serveStatic } from '@hono/node-server/serve-static';
 import { cors } from 'hono/cors';
 import { logger } from 'hono/logger';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StreamableHTTPTransport } from '@hono/mcp';
 import { z } from 'zod';
 
-const SUPPORTED_PROTOCOL = ['2024-11-05'];
+const SUPPORTED_PROTOCOL = ['2024-11-05', '2025-06-18'];
 const mcp = new McpServer({ name: 'umamusume-mcp', version: '1.0.1' });
 
+// @ts-ignore
 mcp.registerTool(
-  'stamina.calculate',
+  'stamina_calculate',
   {
     title: 'Umamusume Stamina Calculator',
     description: 'Compute stamina from inputs.',
     inputSchema: { speed: z.number() },
     outputSchema: { result: z.number() }
   },
-  (params: any) => {
+  // @ts-ignore
+  ({ speed }) => {
     try {
-      console.log('params:', params);
-      const { speed } = params;
       const result = speed * 2;
       const output = { result };
       const response = {
@@ -78,6 +80,9 @@ app.use('*', async (c, next) => {
   await next();
 });
 app.use('*', logger());
+app.use('/favicon.ico', serveStatic({
+  path: fileURLToPath(new URL('./favicon.ico', import.meta.url))
+}));
 
 app.use('*', cors({
   origin: (origin) => origin ?? '*',
