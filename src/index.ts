@@ -9,7 +9,7 @@ const SUPPORTED_PROTOCOL = ['2024-11-05', '2025-06-18'];
 const mcp = new McpServer({ name: 'umamusume-mcp', version: '1.0.1' });
 
 mcp.registerTool(
-  'stamina.calculate',
+  'stamina_calculate',
   {
     title: 'Umamusume Stamina Calculator',
     description: 'Compute stamina from inputs.',
