@@ -25,7 +25,7 @@ mcp.registerTool(
       const response = {
         content: [ {
           type: 'text',
-          json: JSON.stringify(output)
+          text: JSON.stringify(output)
         } ],
         structuredContent: output
       };
