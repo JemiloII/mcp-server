@@ -13,10 +13,14 @@ mcp.registerTool(
   {
     title: 'Umamusume Stamina Calculator',
     description: 'Compute stamina from inputs.',
-    inputSchema: { speed: z.number() },
-    outputSchema: { result: z.number() }
+    inputSchema: z.object({
+      speed: z.number().describe('Speed value to calculate stamina from')
+    }),
+    outputSchema: z.object({
+      result: z.number().describe('Calculated stamina value')
+    })
   },
-  (params: any) => {
+  (params) => {
     try {
       console.log('params:', params);
       const { speed } = params;
@@ -24,8 +28,8 @@ mcp.registerTool(
       const output = { result };
       const response = {
         content: [ {
-          type: 'text',
-          json: JSON.stringify(output)
+          type: 'text' as const,
+          text: JSON.stringify(output)
         } ],
         structuredContent: output
       };
