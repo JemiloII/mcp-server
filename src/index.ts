@@ -5,7 +5,7 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StreamableHTTPTransport } from '@hono/mcp';
 import { z } from 'zod';
 
-const SUPPORTED_PROTOCOL = ['2024-11-05'];
+const SUPPORTED_PROTOCOL = ['2024-11-05', '2025-06-18'];
 const mcp = new McpServer({ name: 'umamusume-mcp', version: '1.0.1' });
 
 mcp.registerTool(
