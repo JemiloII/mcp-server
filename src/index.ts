@@ -8,7 +8,7 @@ import { StreamableHTTPTransport } from '@hono/mcp';
 import { z } from 'zod';
 
 const SUPPORTED_PROTOCOL = ['2024-11-05', '2025-06-18'];
-const mcp = new McpServer({ name: 'umamusume-mcp', version: '1.0.1' });
+const mcp = new McpServer({ name: 'Umamusume Trainer', version: '1.0.1' });
 
 // @ts-ignore
 mcp.registerTool(
@@ -94,8 +94,10 @@ app.use('*', cors({
 
 app.get('/.well-known/mcp.json', (c) =>
   c.json({
+    name: 'Umamusume Trainer',
     transport: 'streamable-http',
     endpoint: '/mcp',
+    icon: 'https://umamusume.training/favicon.png',
     versions: SUPPORTED_PROTOCOL,
   })
 );

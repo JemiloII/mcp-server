@@ -1,8 +1,8 @@
-```
-npm install
-npm run dev
-```
+Claude AI Web is lame and you need port 80/443 for it to connect.
+I'm currently using a cloudflare tunnel before I move things to cloudflare workers.
 
-```
-open http://localhost:3000
-```
+### Install
+`pnpm install`
+
+### Run
+`pnpm run server`
