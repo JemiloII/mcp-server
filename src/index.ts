@@ -17,17 +17,24 @@ mcp.registerTool(
     outputSchema: { result: z.number() }
   },
   (params: any) => {
-    console.log('params:', params);
-    const { speed } = params;
-    const result = speed * 2;
-    const output = { result };
-    return {
-      content: [{
-        type: 'json',
-        json: output
-      }],
-      structuredContent: output
-    };
+    try {
+      console.log('params:', params);
+      const { speed } = params;
+      const result = speed * 2;
+      const output = { result };
+      const response = {
+        content: [ {
+          type: 'text',
+          json: JSON.stringify(output)
+        } ],
+        structuredContent: output
+      };
+      console.log('Response:', response);
+      return response;
+    } catch (e) {
+      console.error('GOT MCP ERROR', e);
+      throw e;
+    }
   }
 );
 
