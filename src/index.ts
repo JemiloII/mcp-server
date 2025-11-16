@@ -10,36 +10,6 @@ import { z } from 'zod';
 const SUPPORTED_PROTOCOL = ['2024-11-05', '2025-06-18'];
 const mcp = new McpServer({ name: 'Umamusume Trainer', version: '1.0.1' });
 
-// @ts-ignore
-mcp.registerTool(
-  'stamina_calculate',
-  {
-    title: 'Umamusume Stamina Calculator',
-    description: 'Compute stamina from inputs.',
-    inputSchema: { speed: z.number() },
-    outputSchema: { result: z.number() }
-  },
-  // @ts-ignore
-  ({ speed }) => {
-    try {
-      const result = speed * 2;
-      const output = { result };
-      const response = {
-        content: [ {
-          type: 'text',
-          text: JSON.stringify(output)
-        } ],
-        structuredContent: output
-      };
-      console.log('Response:', response);
-      return response;
-    } catch (e) {
-      console.error('GOT MCP ERROR', e);
-      throw e;
-    }
-  }
-);
-
 const app = new Hono({ strict: false });
 const transport = new StreamableHTTPTransport();
 async function ensureConnected(): Promise<void> {

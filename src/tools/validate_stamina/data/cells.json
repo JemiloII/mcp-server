@@ -1,0 +1,53 @@
+{
+  "stats": {
+    "speed": "C8",
+    "stamina": "D8",
+    "power": "G8",
+    "guts": "J8",
+    "wisdom": "M8"
+  },
+  "aptitudes": {
+    "turf": "E10",
+    "dirt": "H10",
+    "sprint": "E12",
+    "mile": "H12",
+    "medium": "K12",
+    "long": "N12",
+    "front": "E14",
+    "pace": "H14",
+    "late": "K14",
+    "end": "N14"
+  },
+  "race": {
+    "surface": "D41",
+    "distance": "D42",
+    "condition": "J41",
+    "category": "J42"
+  },
+  "mood": "D16",
+  "style": "J16",
+  "output": {
+    "stamina_needed": "D55",
+    "status": "G54",
+    "skill_proc_rate": "D57",
+    "rushing_rate": "J57"
+  },
+  "adjusted_stats": {
+    "speed": "C52",
+    "stamina": "D52",
+    "power": "G52",
+    "guts": "J52",
+    "wisdom": "M52"
+  },
+  "rushing_rate": "J18",
+  "recovery": {
+    "Recovery015": "D26",
+    "Recovery035": "D28",
+    "Recovery055": "D30",
+    "CustomRecovery": "D32",
+    "uniques_inherited": "H26",
+    "uniques_1": "H28",
+    "uniques_2": "H28",
+    "uniques_3": "H30"
+  }
+}
