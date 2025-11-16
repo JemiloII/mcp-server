@@ -45,7 +45,6 @@ export function StaminaCalculator (input: any) {
   // Set Optional Inputs
   ws[mood].v = input.mood ?? 'Awful';
   ws[style].v = input.style ?? BestStyleAptitude(input);
-  console.log('Setting Style:', ws[style]);
 
   let race_info = input.race ?? getChampionsMeeting();
   if (input.race?.name) {
@@ -75,8 +74,8 @@ export function StaminaCalculator (input: any) {
   XLSX_CALC(wb);
 
   const result = {
-    message: status,
-    not_rushed: notRushedStatus,
+    message: status.replace('！', '!'),
+    not_rushed_message: notRushedStatus.replace('！', '!'),
     stamina_adjusted: Math.round(ws[adjusted_stats.stamina].v),
     stamina_needed: Math.round(ws[output.stamina_needed].v),
     style: ws[style].v,

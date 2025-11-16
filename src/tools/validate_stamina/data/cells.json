@@ -4,7 +4,7 @@
     "stamina": "D8",
     "power": "G8",
     "guts": "J8",
-    "wisdom": "M8"
+    "wit": "M8"
   },
   "aptitudes": {
     "turf": "E10",
@@ -37,7 +37,7 @@
     "stamina": "D52",
     "power": "G52",
     "guts": "J52",
-    "wisdom": "M52"
+    "wit": "M52"
   },
   "rushing_rate": "J18",
   "recovery": {
