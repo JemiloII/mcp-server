@@ -1,11 +1,11 @@
-import races from './data/champions_meetings.json';
+import champions_meetings from './data/champions_meetings.json';
 
 function to15UTC(dateStr: string) {
   const [y, m, d] = dateStr.split('-').map(Number);
   return Date.UTC(y, m - 1, d, 15, 0, 0, 0);
 }
 
-const champions_meeting = races
+const champions_meeting = champions_meetings
   .filter(r => r.global_start && r.global_end)
   .map(r => ({
     ...r,

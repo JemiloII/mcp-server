@@ -5,10 +5,11 @@ import { cors } from 'hono/cors';
 import { logger } from 'hono/logger';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StreamableHTTPTransport } from '@hono/mcp';
-import { z } from 'zod';
+import registerTools from './tools';
 
 const SUPPORTED_PROTOCOL = ['2024-11-05', '2025-06-18'];
 const mcp = new McpServer({ name: 'Umamusume Trainer', version: '1.0.1' });
+await registerTools(mcp);
 
 const app = new Hono({ strict: false });
 const transport = new StreamableHTTPTransport();
