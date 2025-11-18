@@ -3,7 +3,7 @@ import XLSX_CALC from 'xlsx-calc';
 import XLSX, { type WorkSheet } from 'xlsx';
 import * as formulajs from '@formulajs/formulajs';
 import fs from 'node:fs';
-import { findChampionsMeetingByName, getChampionsMeeting } from '../shared/champions_meeting';
+import { cleanOutput, findChampionsMeetingByName, getChampionsMeeting } from '../shared/champions_meeting';
 import { fileURLToPath } from 'node:url';
 import type { Aptitude, Row } from './types';
 import { adjusted_stats, aptitudes, mood, output, race, rushing_rate, stats, style } from './data/cells.json';
@@ -95,16 +95,7 @@ export function StaminaCalculator(input: any) {
   };
 
   if (race_info.name !== 'Custom Cup') {
-    result.race = {
-      ...race_info,
-      id: undefined,
-      jp_start: undefined,
-      jp_end: undefined,
-      global_start: undefined,
-      global_end: undefined,
-      startMs: undefined,
-      endMs: undefined,
-    };
+    result.race = cleanOutput(race_info);
   }
 
   return result;

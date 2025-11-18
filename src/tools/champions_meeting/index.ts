@@ -1,6 +1,5 @@
 import { z } from 'zod';
-
-export const disabled: boolean = true;
+import { cleanOutput, findChampionsMeetingByName, getChampionsMeetingByScope } from '../shared/champions_meeting';
 
 export const name = 'champions_meeting';
 
@@ -21,9 +20,22 @@ export const tool = {
     condition: z.enum(['Firm', 'Good', 'Soft', 'Heavy']),
     season: z.enum(['Fall', 'Winter', 'Spring', 'Summer']),
     weather: z.enum(['Sunny', 'Cloudy', 'Rain', 'Snow']),
-  })
+  }).passthrough()
 };
 
-export function callback(input: any) {
+export function callback(params: any) {
+  const { name, scope = 'current' } = params.input;
+  const result = name
+    ? findChampionsMeetingByName(name, { upcomingOnly: scope === 'next' })
+    : getChampionsMeetingByScope(scope);
 
+  const structuredContent = cleanOutput(result);
+
+  return {
+    content: [{
+      type: 'text',
+      text: JSON.stringify(structuredContent)
+    }],
+    structuredContent,
+  }
 }
