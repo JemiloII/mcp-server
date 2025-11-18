@@ -1,0 +1,377 @@
+[
+  {
+    "id": 10321,
+    "skill": "Introduction to Physiology",
+    "rank": "Unique",
+    "umamusume": "Agnes Tachyon"
+  },
+  {
+    "id": 10451,
+    "skill": "Clear Heart",
+    "rank": "Unique",
+    "umamusume": "Super Creek"
+  },
+  {
+    "id": 10521,
+    "skill": "Super-Duper Stoked",
+    "rank": "Unique",
+    "umamusume": "Haru Urara"
+  },
+  {
+    "id": 100321,
+    "skill": "U=ma2",
+    "rank": "Unique",
+    "umamusume": "Agnes Tachyon"
+  },
+  {
+    "id": 100451,
+    "skill": "Pure Heart",
+    "rank": "Unique",
+    "umamusume": "Super Creek"
+  },
+  {
+    "id": 100521,
+    "skill": "Super-Duper Climax",
+    "rank": "Unique",
+    "umamusume": "Haru Urara"
+  },
+  {
+    "id": 200351,
+    "skill": "Swinging Maestro",
+    "rank": "Gold"
+  },
+  {
+    "id": 200352,
+    "skill": "Corner Recovery ○",
+    "rank": "White"
+  },
+  {
+    "id": 200353,
+    "skill": "Corner Recovery ×",
+    "rank": "Debuff"
+  },
+  {
+    "id": 200381,
+    "skill": "Breath of Fresh Air",
+    "rank": "Gold"
+  },
+  {
+    "id": 200382,
+    "skill": "Straightaway Recovery",
+    "rank": "White"
+  },
+  {
+    "id": 200391,
+    "skill": "Ramp Revulsion",
+    "rank": "Debuff"
+  },
+  {
+    "id": 200401,
+    "skill": "Packphobia",
+    "rank": "Debuff"
+  },
+  {
+    "id": 200441,
+    "skill": "Iron Will",
+    "rank": "Gold"
+  },
+  {
+    "id": 200442,
+    "skill": "Lay Low",
+    "rank": "White"
+  },
+  {
+    "id": 200471,
+    "skill": "Indomitable",
+    "rank": "Gold"
+  },
+  {
+    "id": 200472,
+    "skill": "Pace Strategy",
+    "rank": "White"
+  },
+  {
+    "id": 200481,
+    "skill": "Unruffled",
+    "rank": "Gold"
+  },
+  {
+    "id": 200482,
+    "skill": "Calm in a Crowd",
+    "rank": "White"
+  },
+  {
+    "id": 200521,
+    "skill": "Running Idle",
+    "rank": "Debuff"
+  },
+  {
+    "id": 200561,
+    "skill": "Calm and Collected",
+    "rank": "Gold",
+    "aptitude": "Pace"
+  },
+  {
+    "id": 200562,
+    "skill": "Stamina to Spare",
+    "rank": "White",
+    "aptitude": "Pace"
+  },
+  {
+    "id": 200571,
+    "skill": "Race Planner",
+    "rank": "Gold",
+    "aptitude": "Pace"
+  },
+  {
+    "id": 200572,
+    "skill": "Preferred Position",
+    "rank": "White",
+    "aptitude": "Pace"
+  },
+  {
+    "id": 200621,
+    "skill": "Sleeping Lion",
+    "rank": "Gold",
+    "aptitude": "End"
+  },
+  {
+    "id": 200622,
+    "skill": "Standing By",
+    "rank": "White",
+    "aptitude": "End"
+  },
+  {
+    "id": 200662,
+    "skill": "Wait-and-See",
+    "rank": "White",
+    "aptitude": "Sprint"
+  },
+  {
+    "id": 200691,
+    "skill": "Keen Eye",
+    "rank": "Gold",
+    "aptitude": "Mile"
+  },
+  {
+    "id": 200692,
+    "skill": "Watchful Eye",
+    "rank": "White",
+    "aptitude": "Mile"
+  },
+  {
+    "id": 200711,
+    "skill": "Trackblazer",
+    "rank": "Gold",
+    "aptitude": "Medium"
+  },
+  {
+    "id": 200712,
+    "skill": "Rosy Outlook",
+    "rank": "White",
+    "aptitude": "Medium"
+  },
+  {
+    "id": 200741,
+    "skill": "Cooldown",
+    "rank": "Gold",
+    "aptitude": "Long"
+  },
+  {
+    "id": 200742,
+    "skill": "Deep Breaths",
+    "rank": "White",
+    "aptitude": "Long"
+  },
+  {
+    "id": 200761,
+    "skill": "Adrenaline Rush",
+    "rank": "Gold",
+    "aptitude": "Long"
+  },
+  {
+    "id": 200762,
+    "skill": "Extra Tank",
+    "rank": "White",
+    "aptitude": "Long"
+  },
+  {
+    "id": 201141,
+    "skill": "Miraculous Step",
+    "rank": "Gold",
+    "aptitude": "Medium"
+  },
+  {
+    "id": 201142,
+    "skill": "Soft Step",
+    "rank": "White",
+    "aptitude": "Medium"
+  },
+  {
+    "id": 201202,
+    "skill": "Passing Pro",
+    "rank": "White",
+    "aptitude": "Long"
+  },
+  {
+    "id": 201281,
+    "skill": "Restless",
+    "rank": "Gold",
+    "aptitude": "Front"
+  },
+  {
+    "id": 201282,
+    "skill": "Moxie",
+    "rank": "White",
+    "aptitude": "Front"
+  },
+  {
+    "id": 201351,
+    "skill": "Gourmand",
+    "rank": "Gold",
+    "aptitude": "Pace"
+  },
+  {
+    "id": 201352,
+    "skill": "Hydrate",
+    "rank": "White",
+    "aptitude": "Pace"
+  },
+  {
+    "id": 201421,
+    "skill": "Relax",
+    "rank": "Gold",
+    "aptitude": "Late"
+  },
+  {
+    "id": 201422,
+    "skill": "A Small Breather",
+    "rank": "White",
+    "aptitude": "Late"
+  },
+  {
+    "id": 201481,
+    "skill": "Go-Home Specialist",
+    "rank": "Gold",
+    "aptitude": "End"
+  },
+  {
+    "id": 201482,
+    "skill": "After-School Stroll",
+    "rank": "White",
+    "aptitude": "End"
+  },
+  {
+    "id": 201491,
+    "skill": "Serenity",
+    "rank": "Gold",
+    "aptitude": "End"
+  },
+  {
+    "id": 201492,
+    "skill": "Levelheaded",
+    "rank": "White",
+    "aptitude": "End"
+  },
+  {
+    "id": 201571,
+    "skill": "Triple 7s",
+    "rank": "White"
+  },
+  {
+    "id": 201621,
+    "skill": "Shake It Out",
+    "rank": "White"
+  },
+  {
+    "id": 110111,
+    "skill": "Superior Heal",
+    "rank": "Unique",
+    "umamusume": "Grass Wonder"
+  },
+  {
+    "id": 110011,
+    "skill": "Dazzl'n ♪ Diver",
+    "rank": "Unique",
+    "umamusume": "Special Week"
+  },
+  {
+    "id": 110301,
+    "skill": "Every Rose Has Its Fangs",
+    "rank": "Unique",
+    "umamusume": "Rice Shower"
+  },
+  {
+    "id": 201691,
+    "skill": "Lie in Wait",
+    "rank": "Gold",
+    "aptitude": "Late"
+  },
+  {
+    "id": 201692,
+    "skill": "Be Still",
+    "rank": "White",
+    "aptitude": "Late"
+  },
+  {
+    "id": 201201,
+    "skill": "VIP Pass",
+    "rank": "Gold",
+    "aptitude": "Long"
+  },
+  {
+    "id": 202002,
+    "skill": "Familiar Ground",
+    "rank": "White"
+  },
+  {
+    "id": 300101,
+    "skill": "Cheers of a Fellow Dreamer",
+    "rank": "Gold"
+  },
+  {
+    "id": 10621,
+    "skill": "Ready, Go!",
+    "rank": "Unique",
+    "umamusume": "Matikanetannhauser"
+  },
+  {
+    "id": 100621,
+    "skill": "Go, Go, Mun!",
+    "rank": "Unique",
+    "umamusume": "Matikanetannhauser"
+  },
+  {
+    "id": 202071,
+    "skill": "Of Calm Mind",
+    "rank": "Gold",
+    "aptitude": "Long"
+  },
+  {
+    "id": 202072,
+    "skill": "Free-Spirited",
+    "rank": "White",
+    "aptitude": "Long"
+  },
+  {
+    "id": 100641,
+    "skill": "Keep Pushing Ahead",
+    "rank": "Unique",
+    "umamusume": "Mejiro Palmer"
+  },
+  {
+    "id": 202001,
+    "skill": "Master of the Sands",
+    "rank": "Gold"
+  },
+  {
+    "id": 210022,
+    "skill": "Ignited Spirit STA",
+    "rank": "White"
+  },
+  {
+    "id": 210021,
+    "skill": "Burning Spirit STA",
+    "rank": "Gold"
+  }
+]

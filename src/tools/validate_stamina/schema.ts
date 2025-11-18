@@ -23,7 +23,8 @@ export const inputSchema = z.object({
     surface: z.enum(['Turf', 'Dirt']).optional().describe('Do not fill this field in if a Champions Meeting name is given.'),
     distance: z.number().min(1000).max(3600).optional().describe('Do not fill this field in if a Champions Meeting name is given.'),
     condition: z.enum(['Firm', 'Good', 'Soft', 'Heavy']).optional().describe('Do not fill this field in if a Champions Meeting name is given.')
-  }).optional().describe('Do not fill in race fields unless the user requests for it.')
+  }).optional().describe('Do not fill in race fields unless the user requests for it.'),
+  skills: z.array(z.string()).optional().describe('List the recovery skills here. If a recovery skill has a level, list the `name, level, rank` of umamusume. Count the yellow/gold stars under the rounded square character icon to get the rank and do not count star text. Rank is not the Potential Lvl. If your unsure about the rank, ask the user before sending a request. Do not deviate from the format of `name, level, rank` Rank will never be 0, Rank will never be greater than 5.')
 });
 
 export const outputSchema = z.object({
@@ -31,6 +32,7 @@ export const outputSchema = z.object({
   not_rushed_message: z.string(),
   stamina_adjusted: z.number(),
   stamina_needed: z.number(),
+  not_rushed_stamina_needed: z.number(),
   style: z.string(),
   adjusted_stats: z.object({
     speed: z.number(),
