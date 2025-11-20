@@ -16,7 +16,7 @@ export function Aptitudes(aptitude: string): string {
   }
 }
 
-export function Switches(score: number): string {
+export function Rating(score: number): string {
   switch (true) {
     case score < 300:
       return 'G';

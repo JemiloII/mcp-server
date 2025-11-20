@@ -1,13 +1,13 @@
 import { fileURLToPath } from 'url';
-import { Hono, type Context, type Handler } from 'hono';
-import { serveStatic } from '@hono/node-server/serve-static';
+import { Hono, type Context } from 'hono';
 import { cors } from 'hono/cors';
 import { logger } from 'hono/logger';
-import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
+import { serveStatic } from '@hono/node-server/serve-static';
 import { StreamableHTTPTransport } from '@hono/mcp';
-import registerTools from './tools';
+import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
+import { registerTools } from './tools';
 
-const SUPPORTED_PROTOCOL = ['2024-11-05', '2025-06-18'];
+const SUPPORTED_PROTOCOL = ['2025-06-18'];
 const mcp = new McpServer({ name: 'Umamusume Trainer', version: '1.0.1' });
 await registerTools(mcp);
 
@@ -75,13 +75,20 @@ app.get('/.well-known/mcp.json', (c) =>
 
 app.get('/health', (c) => c.json({ status: 'ok', ts: new Date().toISOString() }));
 
-const mcpHandler: Handler = async (c: Context) => {
+app.on(['GET', 'POST', 'OPTIONS'], ['/', '/mcp'], async (c: Context) => {
   await ensureConnected();
-  return transport.handleRequest(c);
-};
+  const response = await transport.handleRequest(c);
 
-// Mount both paths (keep your UX).
-app.on(['GET', 'POST', 'OPTIONS'], ['/', '/mcp'], mcpHandler);
+  if (response!.headers.get('content-type')?.includes('text/event-stream')) {
+    const text = await response!.text();
+    return c.text(text, 200, {
+      'Content-Type': 'text/event-stream',
+      'Cache-Control': 'no-cache',
+    });
+  }
+
+  return response;
+});
 
 app.notFound((c) => {
   return c.text('Not Found', 404);

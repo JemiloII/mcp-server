@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { cleanOutput, findChampionsMeetingByName, getChampionsMeetingByScope } from '../shared/champions_meeting';
+import { cleanOutput, findChampionsMeetingByName, getChampionsMeetingByScope } from './shared/champions_meeting';
 
 export const name = 'champions_meeting';
 
@@ -9,7 +9,7 @@ export const tool = {
   inputSchema: z.object({
     name: z.string().optional(),
     scope: z.enum(['previous', 'current', 'next']).default('current').optional(),
-  }).optional(),
+  }),
   outputSchema: z.object({
     name: z.string(),
     venue: z.string(),
@@ -23,8 +23,8 @@ export const tool = {
   }).passthrough()
 };
 
-export function callback(params: any) {
-  const { name, scope = 'current' } = params.input;
+export function callback(input: any) {
+  const { name, scope = 'current' } = input;
   const result = name
     ? findChampionsMeetingByName(name, { upcomingOnly: scope === 'next' })
     : getChampionsMeetingByScope(scope);

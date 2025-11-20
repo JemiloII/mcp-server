@@ -9,8 +9,8 @@ export const tool = {
   outputSchema: outputSchema,
 };
 
-export function callback(inputs: any) {
-  const result = StaminaCalculator(inputs);
+export function callback(input: any) {
+  const result = StaminaCalculator(input);
 
   return {
     content: [ {

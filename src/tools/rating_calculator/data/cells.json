@@ -1,0 +1,45 @@
+{
+  "stats": {
+    "speed": "B6",
+    "stamina": "C6",
+    "power": "D6",
+    "guts": "E6",
+    "wit": "F6"
+  },
+  "aptitudes":{
+    "turf": "C11",
+    "dirt": "E11",
+    "sprint": "B13",
+    "mile": "C13",
+    "medium": "D13",
+    "long": "E13",
+    "front": "B15",
+    "pace": "C15",
+    "late": "D15",
+    "end": "E15"
+  },
+  "uma": {
+    "umamusume": "F12",
+    "unique_skill_level": "C19",
+    "uma_star_level": "C20"
+  },
+  "outputs": {
+    "total_score": "C25",
+    "next_rank": "C26"
+  },
+  "scores": {
+    "speed": "B7",
+    "stamina": "C7",
+    "power": "D7",
+    "guts": "E7",
+    "wit": "F7",
+    "unique_skill": "C21"
+  },
+  "skills": {
+    "row_start": 5,
+    "row_end": 47,
+    "type_col": "H",
+    "name_col": "I",
+    "score_col": "K"
+  }
+}
