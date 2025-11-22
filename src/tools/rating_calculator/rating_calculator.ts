@@ -1,24 +1,6 @@
-// @ts-ignore
-import XLSX_CALC from 'xlsx-calc';
-import XLSX, { type WorkSheet } from 'xlsx';
-import * as formulajs from '@formulajs/formulajs';
-import fs from 'node:fs';
-import { fileURLToPath } from 'node:url';
-import * as cells from './data/cells.json';
-import { Aptitudes, Rating } from './switches';
-import { multiOver1200, multiUnder1200 } from './multipliers';
-
-type Cells = Record<string, any>;
-const document = 'umamusume_rating_calculator.xlsx';
-const MASTER_BUFFER = fs.readFileSync(fileURLToPath(new URL(`./data/${document}`, import.meta.url)));
-XLSX_CALC.import_functions({
-  ...formulajs,
-  ...Object.fromEntries(Object.keys(formulajs).map(k => [ k.toLowerCase(), (formulajs as any)[k] ]))
-});
-
-function BulkRead(ws: WorkSheet, cells: Cells) {
-  return Object.entries(cells).reduce((out: Record<string, any>, [stat, cell]) => (out[stat] = ws[cell].v) && out, {});
-}
+import { Aptitudes, Rating, type RatingResult } from './switches';
+import { multiOver1200, multiLess1200, stats } from './constants';
+import cells from './data/cells.json';
 
 function CalculateBlock(
   adjusted: number,
@@ -48,7 +30,7 @@ function StatScore(points: number): number {
 
   if (points <= 1200) {
     const adjusted = points + 1;
-    score = CalculateBlock(adjusted, 50, multiUnder1200, 'floor');
+    score = CalculateBlock(adjusted, 50, multiLess1200, 'floor');
   } else if (points < 1210) {
     const adjusted = points - 1200;
     score = Math.ceil(adjusted * multiOver1200[0] + 3841);
@@ -66,11 +48,8 @@ function UniqueSkillScore(unique_skill_level: number, uma_star_level: number) {
 }
 
 export function rating_calculator(input: any) {
-  const wb = XLSX.read(MASTER_BUFFER, { type: 'buffer', cellFormula: true });
-  const MainSheet = wb.Sheets['Main'];
   const raw: Record<string, any> = {};
-
-  const total_stat_score = Object.keys(cells.stats).reduce((score, stat) => {
+  const total_stat_score = stats.reduce((score, stat) => {
     raw[stat] = StatScore(input[stat]);
     return score + raw[stat];
   }, 0);
@@ -80,19 +59,14 @@ export function rating_calculator(input: any) {
   const unique_skill_score = UniqueSkillScore(input.unique_skill_level, input.uma_star_level);
   console.log('unique_skill_score', unique_skill_score);
 
-  Object.entries(cells.aptitudes)
-    .forEach(([stat, cell]) =>
-      MainSheet[cell].v = Aptitudes(input[stat]));
-
-  // Get Values
-  const outputs = BulkRead(MainSheet, cells.outputs);
+  const total_score = total_stat_score + unique_skill_score;
+  const { rating, next_rank }: RatingResult = Rating(total_score);
 
   return {
-    ...outputs,
-    rating: Rating(total_stat_score),
-    raw: !input.output_raw ? undefined : {
-      ...BulkRead(MainSheet, cells.scores),
-    },
+    total_score,
+    rating,
+    next_rank,
+    raw: input.output_raw ? raw : undefined,
   };
 }
 

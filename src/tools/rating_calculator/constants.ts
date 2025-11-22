@@ -1,4 +1,11 @@
-export const multiUnder1200 = [
+export const aptitudes = [
+  "turf", "dirt",
+  "sprint", "mile", "medium", "long",
+  "front", "pace", "late", "end"
+];
+
+// Current Umamusume Multipliers
+export const multiLess1200 = [
   0.5, 0.8, 1.0, 1.3, 1.6,
   1.8, 2.1, 2.4, 2.6, 2.8,
   2.9, 3.0, 3.1, 3.3, 3.4,
@@ -6,6 +13,7 @@ export const multiUnder1200 = [
   5.2, 5.5, 6.6, 6.8, 6.9,
 ];
 
+// Future Umamusume Multipliers
 export const multiOver1200 = [
   7.888, 8.0,  8.1, 8.3,  8.4,  8.5,  8.6,   8.8,  8.9,
   9.0,  9.2,  9.3, 9.4,  9.6,  9.7,  9.8,  10.0, 10.1,
@@ -16,4 +24,8 @@ export const multiOver1200 = [
   14.9, 15.1, 15.2, 15.3, 15.5, 15.6, 15.7, 15.9, 16.0,
   16.1, 16.2, 16.4, 16.5, 16.6, 16.8, 16.9, 17.0, 17.2,
   17.3, 17.4, 17.6, 17.7, 17.8, 17.9, 18.1, 18.2, 18.3
+];
+
+export const stats = [
+  "speed", "stamina", "power", "guts", "wit"
 ];

@@ -1,3 +1,5 @@
+import ratings from './data/ratings.json';
+
 export function Aptitudes(aptitude: string): string {
   switch (true) {
     case aptitude === 'S':
@@ -16,45 +18,23 @@ export function Aptitudes(aptitude: string): string {
   }
 }
 
-export function Rating(score: number): string {
-  switch (true) {
-    case score < 300:
-      return 'G';
-    case score < 600:
-      return 'G+';
-    case score < 900:
-      return 'F';
-    case score < 1300:
-      return 'F+';
-    case score < 1800:
-      return 'E';
-    case score < 2300:
-      return 'E+';
-    case score < 2900:
-      return 'D';
-    case score < 3500:
-      return 'D+';
-    case score < 4900:
-      return 'C';
-    case score < 6500:
-      return 'C+';
-    case score < 8200:
-      return 'B';
-    case score < 10000:
-      return 'B+';
-    case score < 12100:
-      return 'A';
-    case score < 14500:
-      return 'A+';
-    case score < 15900:
-      return 'S';
-    case score < 17500:
-      return 'S+';
-    case score < 19200:
-      return 'SS';
-    case score >= 19200:
-      return 'SS+';
-    default:
-      return 'G';
+export interface RatingResult {
+  rating: string;
+  next_rank: number;
+}
+
+export function Rating(score: number): RatingResult {
+  let previousThreshold: number = 0;
+
+  for (let i = 0; i < ratings.length; i++) {
+    const [rating, threshold] = ratings[i] as [string, number];
+
+    if (score >= threshold) {
+      const next_rank = previousThreshold - score;
+      return { rating, next_rank };
+    }
+    previousThreshold = threshold;
   }
+
+  return { rating: 'G', next_rank: 300 };
 }
