@@ -4,20 +4,13 @@ import cell from './data/cells.json';
 
 const { GOOGLE_API_KEY, SPREADSHEET_ID } = process.env;
 
-async function checkAndDownloadSheet(): Promise<void> {
+export async function CheckAndDownloadSheet(): Promise<void> {
   const local_version = ExtractVersion();
   const remote_version = await ReadCell(cell.latest);
 
   if (local_version !== remote_version) {
     await DownloadAndValidateXlsx('umamusume_rating_calculator.xlsx');
   }
-}
-
-async function ReadCell(cell: string): Promise<any> {
-  const url = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${cell}?key=${GOOGLE_API_KEY}`;
-  const response = await fetch(url);
-  const data = await response.json() as any;
-  return data.values?.[0]?.[0];
 }
 
 async function DownloadAndValidateXlsx(filename: string): Promise<void> {
@@ -36,4 +29,11 @@ async function DownloadAndValidateXlsx(filename: string): Promise<void> {
   }
 }
 
-checkAndDownloadSheet();
+async function ReadCell(cell: string): Promise<any> {
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${cell}?key=${GOOGLE_API_KEY}`;
+  const response = await fetch(url);
+  const data = await response.json() as any;
+  return data.values?.[0]?.[0];
+}
+
+await CheckAndDownloadSheet();
