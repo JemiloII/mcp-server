@@ -1,21 +1,21 @@
 import XLSX, { type WorkBook, type WorkSheet } from 'xlsx';
-import { ReadFileSync } from './files';
+import { ReadFile } from './files';
 import cells from './data/cells.json';
 
 export type CacheOptions = { use: boolean, save: boolean };
 export type Document = string | ArrayBuffer | Buffer<ArrayBufferLike>;
 const CACHE: Map<Document, WorkBook> = new Map();
 
-export function LoadWorkBook(
+export async function LoadWorkBook(
   document: Document = 'umamusume_rating_calculator.xlsx',
   cache: CacheOptions = { save: true, use: true }
-): WorkBook {
+): Promise<WorkBook> {
   if (CACHE.has(document) && cache.use) {
     return CACHE.get(document)!;
   }
 
   const file = `./data/${document}`;
-  const buffer = Buffer.isBuffer(document) ? document : ReadFileSync(file);
+  const buffer = Buffer.isBuffer(document) ? document : await ReadFile(file);
   const workbook = XLSX.read(buffer, { cellFormula: true, type: 'buffer' });
   if (cache.save) {
     CACHE.set(document, workbook);
@@ -24,8 +24,8 @@ export function LoadWorkBook(
   return workbook;
 }
 
-export function ExtractVersion(document?: Document, cache?: CacheOptions): number {
-  const wb: WorkBook = LoadWorkBook(document, cache);
+export async function ExtractVersion(document?: Document, cache?: CacheOptions): Promise<number> {
+  const wb: WorkBook = await LoadWorkBook(document, cache);
   const ws: WorkSheet = wb.Sheets['Main'];
   return ws[cells.version].v;
 }

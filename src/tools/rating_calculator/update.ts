@@ -1,5 +1,5 @@
 import { type CacheOptions, ExtractVersion, LoadWorkBook } from './extract';
-import { WriteFileSync } from './files';
+import { WriteFile } from './files';
 import cell from './data/cells.json';
 
 const { GOOGLE_API_KEY, SPREADSHEET_ID } = process.env;
@@ -21,8 +21,8 @@ async function DownloadAndValidateXlsx(filename: string): Promise<void> {
   try {
     const cache: CacheOptions = { save: false, use: false }
     const version = ExtractVersion(buffer, cache);
-    WriteFileSync(`./data/${filename}`, Buffer.from(buffer));
-    LoadWorkBook();
+    await WriteFile(`./data/${filename}`, Buffer.from(buffer));
+    await LoadWorkBook();
     console.log(`Sheet updated to version ${version}`);
   } catch (error) {
     console.error('Downloaded file validation failed:', error);
