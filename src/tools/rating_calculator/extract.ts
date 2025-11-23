@@ -6,6 +6,77 @@ export type CacheOptions = { use: boolean, save: boolean };
 export type Document = string | ArrayBuffer | Buffer<ArrayBufferLike>;
 const CACHE: Map<Document, WorkBook> = new Map();
 
+type ReadSkills = [Record<string, string>] | [Record<string, string>, number];
+type SkillSheets = Record<string, ReadSkills | []>;
+
+function ReadSkills(
+  ws: WorkSheet,
+  columns: Record<string, string> = {},
+  start_row: number = 2,
+  key_column: string = 'A',
+): Record<string, Record<string, string|number>> {
+  const result: Record<string, Record<string, string|number>> = {};
+  columns = { base: 'B', ...columns };
+  let row = start_row;
+  while (true) {
+    const cell = ws[`${key_column}${row}`];
+    const { s: skill_style, v: key } = cell || {};
+    if (!key) {
+      break;
+    }
+
+    result[key] = {
+      rarity: 'common'
+    };
+
+    switch (ws.name) {
+      case 'Blue':
+        result[key]['category'] = 'recovery';
+        break;
+      case 'Inherited Unique Skill':
+        result[key]['type'] = 'unique';
+        break;
+      case 'Purple':
+        result[key]['category'] = 'detrimental';
+        break;
+      case 'Red':
+        result[key]['category'] = 'debuff';
+        break;
+      default:
+        result[key]['category'] = 'standard';
+    }
+
+    if (ws.name === 'gold' && skill_style?.bgColor) {
+      result[key]['rarity'] = 'rare';
+      switch (skill_style.bgColor?.rgb) {
+        case 'F4CCCC':
+          result[key]['category'] = 'debuff';
+          break;
+        case 'C9DAF8':
+          result[key]['category'] = 'recovery';
+          break;
+        case 'FFF2CC':
+        default:
+          result[key]['category'] = 'standard';
+      }
+    }
+
+    for (const [name, column] of Object.entries(columns)) {
+      const cell = ws[`${column}${row}`];
+      const { s, v: value } = cell || {};
+      if (name !== 'base' && s?.bgColor && s.bgColor.rgb !== 'CFFFA8') {
+        continue;
+      }
+
+      result[key][name] = value;
+    }
+
+    row++;
+  }
+
+  return result;
+}
+
 export async function LoadWorkBook(
   document: Document = 'umamusume_rating_calculator.xlsx',
   cache: CacheOptions = { save: true, use: true }
@@ -16,7 +87,7 @@ export async function LoadWorkBook(
 
   const file = `./data/${document}`;
   const buffer = Buffer.isBuffer(document) ? document : await ReadFile(file);
-  const workbook = XLSX.read(buffer, { cellFormula: true, type: 'buffer' });
+  const workbook = XLSX.read(buffer, { cellFormula: true, cellStyles: true, type: 'buffer' });
   if (cache.save) {
     CACHE.set(document, workbook);
   }
@@ -24,8 +95,28 @@ export async function LoadWorkBook(
   return workbook;
 }
 
-export async function ExtractVersion(document?: Document, cache?: CacheOptions): Promise<number> {
+export async function LoadWorkSheet(sheet: string, document?: Document, cache?: CacheOptions): Promise<WorkSheet> {
   const wb: WorkBook = await LoadWorkBook(document, cache);
-  const ws: WorkSheet = wb.Sheets['Main'];
+  return wb.Sheets[sheet];
+}
+
+export async function ExtractVersion(document?: Document, cache?: CacheOptions): Promise<number> {
+  const ws: WorkSheet = LoadWorkSheet('Main', document, cache);
   return ws[cells.version].v;
 }
+
+export async function SkillList(skill_sheets: SkillSheets = {}) {
+  const skill_list = {};
+  for (const sheet in skill_sheets) {
+    console.log('Loading:', sheet);
+    const [columns, start_row] = skill_sheets[sheet];
+    const ws: WorkSheet = await LoadWorkSheet(sheet);
+    ws.name = sheet;
+    const skills = ReadSkills(ws, columns, start_row);
+    Object.assign(skill_list, skills);
+  }
+
+  return skill_list;
+}
+
+console.log('Skill List:', await SkillList());

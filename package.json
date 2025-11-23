@@ -8,7 +8,8 @@
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node --env-file=.env dist/index.js",
-    "server": "tsx --env-file=.env --watch src/server.ts"
+    "server": "tsx --env-file=.env --watch src/server.ts",
+    "extract": " tsx --env-file=.env src/tools/rating_calculator/extract.ts"
   },
   "dependencies": {
     "@formulajs/formulajs": "4.5.4",
