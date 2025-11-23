@@ -12,8 +12,8 @@ export const tool = {
   outputSchema
 };
 
-export function callback(input: any) {
-  const structuredContent = rating_calculator(input);
+export async function callback(input: any) {
+  const structuredContent = await rating_calculator(input);
   return {
     content: [{
       type: 'text',

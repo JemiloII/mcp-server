@@ -102,7 +102,7 @@ export async function LoadWorkSheet(sheet: string, document?: Document, cache?: 
 }
 
 export async function ExtractVersion(document?: Document, cache?: CacheOptions): Promise<number> {
-  const ws: WorkSheet = LoadWorkSheet('Main', document, cache);
+  const ws: WorkSheet = await LoadWorkSheet('Main', document, cache);
   return ws[cells.version].v;
 }
 

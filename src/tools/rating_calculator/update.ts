@@ -5,10 +5,12 @@ import cell from './data/cells.json';
 const { GOOGLE_API_KEY, SPREADSHEET_ID } = process.env;
 
 export async function CheckAndUpdateData(): Promise<void> {
-  const local_version = ExtractVersion();
+  const local_version = await ExtractVersion();
   const remote_version = await ReadCell(cell.latest);
+  console.log('local version:', typeof local_version, local_version);
+  console.log('remote version:', typeof remote_version, remote_version);
 
-  if (local_version !== remote_version) {
+  if (local_version !== remote_version && remote_version) {
     await DownloadAndValidateXlsx('umamusume_rating_calculator.xlsx');
     await SaveAllSkills();
   }
@@ -21,7 +23,7 @@ async function DownloadAndValidateXlsx(filename: string): Promise<void> {
 
   try {
     const cache: CacheOptions = { save: false, use: false }
-    const version = ExtractVersion(buffer, cache);
+    const version = await ExtractVersion(buffer, cache);
     await WriteFile(`./data/${filename}`, Buffer.from(buffer));
     await LoadWorkBook();
     console.log(`Sheet updated to version ${version}`);

@@ -1,5 +1,6 @@
 import { Aptitudes, Rating, type RatingResult } from './switches';
 import { multiOver1200, multiLess1200, stats } from './constants';
+import { ReadFile } from './files';
 
 function CalculateBlock(
   adjusted: number,
@@ -46,7 +47,7 @@ function UniqueSkillScore(unique_skill_level: number, uma_star_level: number) {
   return unique_skill_level * multiplier;
 }
 
-export function rating_calculator(input: any) {
+export async function rating_calculator(input: any) {
   const raw: Record<string, any> = {};
   const total_stat_score = stats.reduce((score, stat) => {
     raw[stat] = StatScore(input[stat]);
@@ -61,6 +62,8 @@ export function rating_calculator(input: any) {
   const total_score = total_stat_score + unique_skill_score;
   const { rating, next_rank }: RatingResult = Rating(total_score);
 
+  const skills = await ReadFile('./data/skills.json');
+
   return {
     total_score,
     rating,
@@ -68,14 +71,3 @@ export function rating_calculator(input: any) {
     raw: input.output_raw ? raw : undefined,
   };
 }
-
-console.log('Rating:', rating_calculator({
-  speed: 900,
-  stamina: 800,
-  power: 600,
-  guts: 500,
-  wit: 400,
-  umamusume: 'Super Creek',
-  unique_skill_level: 4,
-  uma_star_level: 3
-}));
