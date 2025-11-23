@@ -10,7 +10,7 @@ export async function CheckAndUpdateData(): Promise<void> {
   console.log('local version:', typeof local_version, local_version);
   console.log('remote version:', typeof remote_version, remote_version);
 
-  if (local_version !== remote_version && remote_version) {
+  if (local_version && remote_version && local_version !== remote_version) {
     console.log('Downloading Latest update...');
     await DownloadAndValidateXlsx('umamusume_rating_calculator.xlsx');
     await SaveAllSkills();
