@@ -1,6 +1,7 @@
 import XLSX, { type WorkBook, type WorkSheet } from 'xlsx';
-import { ReadFile } from './files';
+import { ReadFile, WriteFile } from './files';
 import cells from './data/cells.json';
+import recovery from './data/recovery.json';
 
 export type CacheOptions = { use: boolean, save: boolean };
 export type Document = string | ArrayBuffer | Buffer<ArrayBufferLike>;
@@ -34,7 +35,7 @@ function ReadSkills(
         result[key]['category'] = 'recovery';
         break;
       case 'Inherited Unique Skill':
-        result[key]['type'] = 'unique';
+        result[key]['rarity'] = 'unique';
         break;
       case 'Purple':
         result[key]['category'] = 'detrimental';
@@ -119,4 +120,29 @@ export async function SkillList(skill_sheets: SkillSheets = {}) {
   return skill_list;
 }
 
-console.log('Skill List:', await SkillList());
+export async function SaveAllSkills() {
+  const skill_sheets: SkillSheets = {
+    "Blue": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', Aptitude: 'G' }],
+    "Gold": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', Aptitude: 'G' }],
+    "Green": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', Aptitude: 'G' }],
+    "Purple": [],
+    "Red": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', Aptitude: 'G' }, 3],
+    "Yellow": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', Aptitude: 'G' }]
+  };
+  const skill_list = await SkillList(skill_sheets);
+
+  const inherited_skill_sheet: SkillSheets = {
+    "Inherited Unique Skill": []
+  };
+  const inherited_skill_list = await SkillList(inherited_skill_sheet);
+  Object.entries(inherited_skill_list)
+    .forEach(([skill, value]: [skill: string, value: any]) => {
+      if (value.rarity === 'unique' && (recovery as Record<string, any>)[skill]?.["rarity"]! === 'unique') {
+        inherited_skill_list[skill].category = 'recovery';
+      }
+    });
+
+  Object.assign(skill_list, inherited_skill_list);
+
+  await WriteFile(`./data/skills.json`, JSON.stringify(skill_list, null, 2), { encoding: 'utf8' });
+}

@@ -1,6 +1,5 @@
 import { Aptitudes, Rating, type RatingResult } from './switches';
 import { multiOver1200, multiLess1200, stats } from './constants';
-import cells from './data/cells.json';
 
 function CalculateBlock(
   adjusted: number,

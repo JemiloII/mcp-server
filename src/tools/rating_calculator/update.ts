@@ -1,15 +1,16 @@
-import { type CacheOptions, ExtractVersion, LoadWorkBook } from './extract';
+import { type CacheOptions, ExtractVersion, LoadWorkBook, SaveAllSkills } from './extract';
 import { WriteFile } from './files';
 import cell from './data/cells.json';
 
 const { GOOGLE_API_KEY, SPREADSHEET_ID } = process.env;
 
-export async function CheckAndDownloadSheet(): Promise<void> {
+export async function CheckAndUpdateData(): Promise<void> {
   const local_version = ExtractVersion();
   const remote_version = await ReadCell(cell.latest);
 
   if (local_version !== remote_version) {
     await DownloadAndValidateXlsx('umamusume_rating_calculator.xlsx');
+    await SaveAllSkills();
   }
 }
 
@@ -35,5 +36,3 @@ async function ReadCell(cell: string): Promise<any> {
   const data = await response.json() as any;
   return data.values?.[0]?.[0];
 }
-
-await CheckAndDownloadSheet();
