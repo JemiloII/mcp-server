@@ -87,7 +87,8 @@ export async function LoadWorkBook(
   }
 
   const file = `./data/${document}`;
-  const buffer = Buffer.isBuffer(document) ? document : await ReadFile(file);
+  console.log('go doc', document, Buffer.isBuffer(document), typeof document);
+  const buffer = Buffer.isBuffer(document) || document instanceof ArrayBuffer ? document : await ReadFile(file);
   const workbook = XLSX.read(buffer, { cellFormula: true, cellStyles: true, type: 'buffer' });
   if (cache.save) {
     CACHE.set(document, workbook);
