@@ -7,8 +7,8 @@ const { GOOGLE_API_KEY, SPREADSHEET_ID } = process.env;
 export async function CheckAndUpdateData(): Promise<void> {
   const local_version = await ExtractVersion();
   const remote_version = await ReadCell(cell.latest);
-  console.log('local version:', typeof local_version, local_version);
-  console.log('remote version:', typeof remote_version, remote_version);
+  console.log('Checking Rating Calculator XLSX Versions');
+  console.log('local version', local_version, '===', remote_version, 'remote_version');
 
   if (local_version && remote_version && local_version !== remote_version) {
     console.log('Downloading Latest update...');
