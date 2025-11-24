@@ -73,8 +73,11 @@ export async function rating_calculator(input: any) {
 
         if (skills[skill].aptitude) {
           const aptitude_group = Aptitudes(input[skills[skill].aptitude.toLowerCase()]);
-          total_skill_score += skills[skill][aptitude_group];
-          raw.skills[skill] = skills[skill][aptitude_group];
+          const value = skills[skill][aptitude_group];
+          const score = Number.isNaN(value) ? value : skills[skill].base;
+          console.log(`skill: ${skill} | score: ${score}`);
+          total_skill_score += score;
+          raw.skills[skill] = score;
         } else {
           total_skill_score += skills[skill].base;
           raw.skills[skill] = skills[skill].base;
@@ -84,6 +87,7 @@ export async function rating_calculator(input: any) {
       }
     }
   }
+  console.log(total_skill_score);
 
   const total_score = total_stat_score + unique_skill_score + total_skill_score;
   const { rating, next_rank }: RatingResult = Rating(total_score);
