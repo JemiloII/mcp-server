@@ -122,12 +122,12 @@ export async function SkillList(skill_sheets: SkillSheets = {}) {
 
 export async function SaveAllSkills() {
   const skill_sheets: SkillSheets = {
-    "Blue": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', Aptitude: 'G' }],
-    "Gold": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', Aptitude: 'G' }],
-    "Green": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', Aptitude: 'G' }],
+    "Blue": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', aptitude: 'G' }],
+    "Gold": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', aptitude: 'G' }],
+    "Green": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', aptitude: 'G' }],
     "Purple": [],
-    "Red": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', Aptitude: 'G' }, 3],
-    "Yellow": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', Aptitude: 'G' }]
+    "Red": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', aptitude: 'G' }, 3],
+    "Yellow": [{ 'S-A': 'C', 'B-C': 'D', 'D-E-F': 'E', 'G': 'F', aptitude: 'G' }]
   };
   const skill_list = await SkillList(skill_sheets);
 

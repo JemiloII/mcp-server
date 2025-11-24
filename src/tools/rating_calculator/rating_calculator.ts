@@ -48,7 +48,7 @@ function UniqueSkillScore(unique_skill_level: number, uma_star_level: number) {
 }
 
 export async function rating_calculator(input: any) {
-  const raw: Record<string, any> = {};
+  const raw: Record<string, any> = { skills: {} };
   const total_stat_score = stats.reduce((score, stat) => {
     raw[stat] = StatScore(input[stat]);
     return score + raw[stat];
@@ -57,6 +57,7 @@ export async function rating_calculator(input: any) {
   console.log('total_stat_score', total_stat_score);
 
   const unique_skill_score = UniqueSkillScore(input.unique_skill_level, input.uma_star_level);
+  raw.unique_skill = unique_skill_score;
   console.log('unique_skill_score', unique_skill_score);
 
 
@@ -65,18 +66,23 @@ export async function rating_calculator(input: any) {
   const skills = JSON.parse(await ReadFile('./data/skills.json', { encoding: 'utf8' }));
   if (input.skills?.length > 0) {
     for (const skill of input.skills) {
-      if (skills[skill].rarity === 'unique' && skills[skill].umamusume === input.umamusume) {
-        continue;
-      }
+      try {
+        if (skills[skill].rarity === 'unique' && skills[skill].umamusume === input.umamusume) {
+          continue;
+        }
 
-      if (skill.aptitude) {
-        const rank = Aptitudes(input[skill.aptitude]);
-        total_skill_score += skills[skill][rank];
-      } else {
-        total_skill_score += skills[skill].base!;
+        if (skills[skill].aptitude) {
+          const aptitude_group = Aptitudes(input[skills[skill].aptitude.toLowerCase()]);
+          total_skill_score += skills[skill][aptitude_group];
+          raw.skills[skill] = skills[skill][aptitude_group];
+        } else {
+          total_skill_score += skills[skill].base;
+          raw.skills[skill] = skills[skill].base;
+        }
+      } catch (error) {
+        throw `Invalid Skill Name: [${skill}] Is it missing symbols? [=-!,☆∴∞;#♪(ﾟ∀ﾟ)♡○◎×/]`;
       }
     }
-    raw.total_skill_score = total_skill_score;
   }
 
   const total_score = total_stat_score + unique_skill_score + total_skill_score;
@@ -90,36 +96,36 @@ export async function rating_calculator(input: any) {
   };
 }
 
-const test = {
-  'umamusume': 'El Condor Pasa',
-  'uma_star_level': 3,
-  'speed': 1200,
-  'stamina': 697,
-  'power': 799,
-  'guts': 349,
-  'wit': 436,
-  'unique_skill_level': 4,
-  'turf': 'A',
-  'dirt': 'B',
-  'sprint': 'F',
-  'mile': 'A',
-  'medium': 'A',
-  'long': 'A',
-  'front': 'D',
-  'pace': 'A',
-  'late': 'A',
-  'end': 'G',
-  'skills': [
-    'Victoria por plancha ☆',
-    'Right-Handed ◎',
-    'Fall Runner ◎',
-    'Beeline Burst',
-    'Breath of Fresh Air',
-    'Pace Chaser Straightaways ◎',
-    'Pace Chaser Corners ◎',
-  ],
-  output_raw: true
-}
-
-const rating = await rating_calculator(test);
-console.log('Rating:', rating);
+// const test = {
+//   'umamusume': 'El Condor Pasa',
+//   'uma_star_level': 3,
+//   'speed': 1200,
+//   'stamina': 697,
+//   'power': 799,
+//   'guts': 349,
+//   'wit': 436,
+//   'unique_skill_level': 4,
+//   'turf': 'A',
+//   'dirt': 'B',
+//   'sprint': 'F',
+//   'mile': 'A',
+//   'medium': 'A',
+//   'long': 'A',
+//   'front': 'D',
+//   'pace': 'A',
+//   'late': 'A',
+//   'end': 'G',
+//   'skills': [
+//     'Victoria por plancha ☆',
+//     'Right-Handed ◎',
+//     'Fall Runner ◎',
+//     'Beeline Burst',
+//     'Breath of Fresh Air',
+//     'Pace Chaser Straightaways ◎',
+//     'Pace Chaser Corners ◎',
+//   ],
+//   output_raw: true
+// }
+//
+// const rating = await rating_calculator(test);
+// console.log('Rating:', rating);
