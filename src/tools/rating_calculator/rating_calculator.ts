@@ -65,8 +65,8 @@ export async function rating_calculator(input: any) {
   const skills = JSON.parse(await ReadFile('./data/skills.json', { encoding: 'utf8' }));
   if (input.skills?.length > 0) {
     for (const skill of input.skills) {
-      if (skill.rarity === 'unique') {
-
+      if (skills[skill].rarity === 'unique' && skills[skill].umamusume === input.umamusume) {
+        continue;
       }
 
       if (skill.aptitude) {
