@@ -2883,211 +2883,262 @@
   "U=ma2": {
     "rarity": "unique",
     "base": 180,
+    "umamusume": "Agnes Tachyon",
     "category": "recovery"
   },
   "Pure Heart": {
     "rarity": "unique",
     "base": 180,
+    "umamusume": "Super Creek",
     "category": "recovery"
   },
   "Super-Duper Climax": {
     "rarity": "unique",
     "base": 180,
+    "umamusume": "Haru Urara",
     "category": "recovery"
   },
   "Certain Victory": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Tokai Teio (Anime)"
   },
   "Legacy of the Strong": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Mejiro McQueen (Anime)"
   },
   "Shooting Star": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Special Week"
   },
   "The View from the Lead Is Mine!": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Silence Suzuka"
   },
   "Sky-High Teio Step": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Tokai Teio"
   },
   "Triumphant Pulse": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Oguri Cap"
   },
   "Anchors Aweigh!": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Gold Ship"
   },
   "Cut and Drive!": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Vodka"
   },
   "Resplendent Red Ace": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Daiwa Scarlet"
   },
   "Where There's a Will, There's a Way": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Grass Wonder"
   },
   "The Duty of Dignity Calls": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Mejiro McQueen"
   },
   "Victoria por plancha ☆": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "El Condor Pasa"
   },
   "This Dance Is for Vittoria!": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "T.M. Opera O"
   },
   "Behold Thine Emperor's Divine Might": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Symboli Rudolf"
   },
   "Blazing Pride": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Air Groove"
   },
   "∴win Q.E.D.": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Biwa Hayahide"
   },
   "Flashy☆Landing": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Mayano Top Gun"
   },
   "G00 1st. F∞;": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Mihono Bourbon"
   },
   "Blue Rose Closer": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Rice Shower"
   },
   "Our Ticket to Win!": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Winning Ticket"
   },
   "Genius x Bakushin = Victory": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Sakura Bakushin O"
   },
   "I See Victory in My Future!": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Matikanefukukitaru"
   },
   "Just a Little Farther!": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Nice Nature"
   },
   "Prideful King": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "King Halo"
   },
   "#LookatCurren": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Curren Chan"
   },
   "Red Shift/LP1211-M": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Maruzensky"
   },
   "Shooting for Victory!": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Taiki Shuttle"
   },
   "Let's Pump Some Iron!": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Mejiro Ryan"
   },
   "Nemesis": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Narita Taishin"
   },
   "SPARKLY☆STARDOM": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Smart Falcon"
   },
   "Shadow Break": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Narita Brian"
   },
   "Eternal Moments": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Air Groove (Wedding)"
   },
   "Flowery☆Maneuver": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Mayano Top Gun (Wedding)"
   },
   "Angling and Scheming": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Seiun Sky"
   },
   "You and Me! One-on-One!": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Hishi Amazon"
   },
   "Condor's Fury": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "El Condor Pasa (Fantasy)"
   },
   "Superior Heal": {
     "rarity": "unique",
     "base": 180,
+    "umamusume": "Grass Wonder (Fantasy)",
     "category": "recovery"
   },
   "Lights of Vaudeville": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Fuji Kiseki"
   },
   "KEEP IT REAL.": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Gold City"
   },
   "Dazzl'n ♪ Diver": {
     "rarity": "unique",
     "base": 180,
+    "umamusume": "Special Week (Summer)",
     "category": "recovery"
   },
   "A Kiss for Courage": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Maruzensky (Summer)"
   },
   "I Never Goof Up!": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Meisho Doto"
   },
   "Schwarzes Schwert": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Eishin Flash"
   },
   "Bountiful Harvest": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Matikanefukukitaru (Full Armor)"
   },
   "YUMMY☆SPEED!\n": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Hishi Akebono"
   },
   "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Agnes Digital"
   },
   "Give Mummy a Hug ♡": {
     "rarity": "unique",
-    "base": 180
+    "base": 180,
+    "umamusume": "Super Creek (Halloween)"
   },
   "Every Rose Has Its Fangs": {
     "rarity": "unique",
     "base": 180,
+    "umamusume": "Rice Shower (Halloween)",
     "category": "recovery"
   }
 }

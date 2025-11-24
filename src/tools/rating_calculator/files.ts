@@ -18,8 +18,8 @@ export function filePath(file: string) {
   return fileURLToPath(new URL(file, import.meta.url));
 }
 
-export function ReadFile(file: string) {
-  return readFile(filePath(file));
+export function ReadFile(file: string, options?: WriteOptions) {
+  return readFile(filePath(file), options);
 }
 
 export async function WriteFile(file: string, data: Buffer|string, options?: WriteOptions) {

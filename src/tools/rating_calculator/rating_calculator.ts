@@ -59,10 +59,28 @@ export async function rating_calculator(input: any) {
   const unique_skill_score = UniqueSkillScore(input.unique_skill_level, input.uma_star_level);
   console.log('unique_skill_score', unique_skill_score);
 
-  const total_score = total_stat_score + unique_skill_score;
-  const { rating, next_rank }: RatingResult = Rating(total_score);
 
-  const skills = await ReadFile('./data/skills.json');
+  let total_skill_score = 0;
+  // @ts-ignore
+  const skills = JSON.parse(await ReadFile('./data/skills.json', { encoding: 'utf8' }));
+  if (input.skills?.length > 0) {
+    for (const skill of input.skills) {
+      if (skill.rarity === 'unique') {
+
+      }
+
+      if (skill.aptitude) {
+        const rank = Aptitudes(input[skill.aptitude]);
+        total_skill_score += skills[skill][rank];
+      } else {
+        total_skill_score += skills[skill].base!;
+      }
+    }
+    raw.total_skill_score = total_skill_score;
+  }
+
+  const total_score = total_stat_score + unique_skill_score + total_skill_score;
+  const { rating, next_rank }: RatingResult = Rating(total_score);
 
   return {
     total_score,
@@ -71,3 +89,37 @@ export async function rating_calculator(input: any) {
     raw: input.output_raw ? raw : undefined,
   };
 }
+
+const test = {
+  'umamusume': 'El Condor Pasa',
+  'uma_star_level': 3,
+  'speed': 1200,
+  'stamina': 697,
+  'power': 799,
+  'guts': 349,
+  'wit': 436,
+  'unique_skill_level': 4,
+  'turf': 'A',
+  'dirt': 'B',
+  'sprint': 'F',
+  'mile': 'A',
+  'medium': 'A',
+  'long': 'A',
+  'front': 'D',
+  'pace': 'A',
+  'late': 'A',
+  'end': 'G',
+  'skills': [
+    'Victoria por plancha ☆',
+    'Right-Handed ◎',
+    'Fall Runner ◎',
+    'Beeline Burst',
+    'Breath of Fresh Air',
+    'Pace Chaser Straightaways ◎',
+    'Pace Chaser Corners ◎',
+  ],
+  output_raw: true
+}
+
+const rating = await rating_calculator(test);
+console.log('Rating:', rating);

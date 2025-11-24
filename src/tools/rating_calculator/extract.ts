@@ -132,7 +132,7 @@ export async function SaveAllSkills() {
   const skill_list = await SkillList(skill_sheets);
 
   const inherited_skill_sheet: SkillSheets = {
-    "Inherited Unique Skill": []
+    "Inherited Unique Skill": [{ umamusume: 'C' }]
   };
   const inherited_skill_list = await SkillList(inherited_skill_sheet);
   Object.entries(inherited_skill_list)
