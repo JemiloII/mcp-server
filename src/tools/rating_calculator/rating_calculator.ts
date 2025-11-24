@@ -95,37 +95,3 @@ export async function rating_calculator(input: any) {
     raw: input.output_raw ? raw : undefined,
   };
 }
-
-// const test = {
-//   'umamusume': 'El Condor Pasa',
-//   'uma_star_level': 3,
-//   'speed': 1200,
-//   'stamina': 697,
-//   'power': 799,
-//   'guts': 349,
-//   'wit': 436,
-//   'unique_skill_level': 4,
-//   'turf': 'A',
-//   'dirt': 'B',
-//   'sprint': 'F',
-//   'mile': 'A',
-//   'medium': 'A',
-//   'long': 'A',
-//   'front': 'D',
-//   'pace': 'A',
-//   'late': 'A',
-//   'end': 'G',
-//   'skills': [
-//     'Victoria por plancha ☆',
-//     'Right-Handed ◎',
-//     'Fall Runner ◎',
-//     'Beeline Burst',
-//     'Breath of Fresh Air',
-//     'Pace Chaser Straightaways ◎',
-//     'Pace Chaser Corners ◎',
-//   ],
-//   output_raw: true
-// }
-//
-// const rating = await rating_calculator(test);
-// console.log('Rating:', rating);

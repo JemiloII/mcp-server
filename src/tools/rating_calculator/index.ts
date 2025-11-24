@@ -7,7 +7,7 @@ export const name = 'rating_calculator';
 
 export const tool = {
   title: 'Rating Calculator',
-  description: 'Calculate the rating of the umamusume before the end of the career run. Be critical about each stat collected from the image. If a value is incorrect, the rating will be wrong. Validate each stat you collect one at a time.',
+  description: 'Calculate the rating of the umamusume before the end of the career run. Be critical about each stat collected from the image. If a value is incorrect, the rating will be wrong. Validate each stat you collect one at a time. Always list the processed skills so the user can verify that the result is correct.',
   inputSchema,
   outputSchema
 };
