@@ -6,7 +6,8 @@ import fs from 'node:fs';
 import { cleanOutput, findChampionsMeetingByName, getChampionsMeeting } from '../shared/champions_meeting';
 import { fileURLToPath } from 'node:url';
 import type { Aptitude, Row } from './types';
-import { adjusted_stats, aptitudes, mood, output, race, rushing_rate, stats, style } from './data/cells.json';
+import { adjusted_stats, aptitudes, mood, output, race, rushing_rate, stats, style, recovery } from './data/cells.json';
+import recoverySkills from '../rating_calculator/data/recovery.json';
 
 const MASTER_BUFFER = fs.readFileSync(fileURLToPath(new URL('./data/stamina_calculator.xlsx', import.meta.url)));
 XLSX_CALC.import_functions({
@@ -35,6 +36,88 @@ function BulkUpdate(ws: WorkSheet, cells: Record<any, any>, input: any, fallback
   Object.entries(cells).forEach(([ stat, cell ]: [ stat: string, cell: string ]) => ws[cell].v = input[stat] ?? fallback);
 }
 
+interface SkillCounts {
+  Recovery015: number;
+  Recovery035: number;
+  Recovery055: number;
+  CustomRecoveryPercent: number; // Total custom recovery as decimal (e.g., 0.075 for 7.5%)
+  uniques_inherited: number;
+  uniques_1_2: number;
+  uniques_3_plus: number;
+}
+
+function ProcessRecoverySkills(skills: string[] | undefined): SkillCounts {
+  const counts: SkillCounts = {
+    Recovery015: 0,
+    Recovery035: 0,
+    Recovery055: 0,
+    CustomRecoveryPercent: 0,
+    uniques_inherited: 0,
+    uniques_1_2: 0,
+    uniques_3_plus: 0,
+  };
+
+  if (!skills || skills.length === 0) {
+    return counts;
+  }
+
+  for (const skillEntry of skills) {
+    // Check if this is a unique skill with format "name, level, rank"
+    const uniqueMatch = skillEntry.match(/^(.+?),\s*(?:level\s*)?(\d+),\s*(?:rank\s*)?(\d+)$/i);
+
+    if (uniqueMatch) {
+      // This is a unique skill with rank
+      const skillName = uniqueMatch[1].trim();
+      const rank = parseInt(uniqueMatch[3], 10);
+
+      // Check if skill exists in recovery data
+      const skillData = (recoverySkills as any)[skillName];
+      if (!skillData) {
+        console.warn(`Unknown unique skill: ${skillName}`);
+        continue;
+      }
+
+      // Categorize by rank
+      if (rank >= 3) {
+        counts.uniques_3_plus++;
+      } else if (rank >= 1) {
+        counts.uniques_1_2++;
+      }
+    } else {
+      // This is a non-unique skill or inherited unique
+      const skillName = skillEntry.trim();
+      const skillData = (recoverySkills as any)[skillName];
+
+      if (!skillData) {
+        console.warn(`Unknown skill: ${skillName}`);
+        continue;
+      }
+
+      const recoveryRate = skillData.recovery;
+      const rarity = skillData.rarity;
+
+      // If it's a unique skill without rank info, treat as inherited
+      if (rarity === 'unique') {
+        counts.uniques_inherited++;
+      } else {
+        // Non-unique skill - categorize by recovery rate
+        if (recoveryRate === 0.015) {
+          counts.Recovery015++;
+        } else if (recoveryRate === 0.035) {
+          counts.Recovery035++;
+        } else if (recoveryRate === 0.055) {
+          counts.Recovery055++;
+        } else {
+          // Accumulate custom recovery rates
+          counts.CustomRecoveryPercent += recoveryRate;
+        }
+      }
+    }
+  }
+
+  return counts;
+}
+
 export function StaminaCalculator(input: any) {
   const wb = XLSX.read(MASTER_BUFFER, { type: 'buffer', cellFormula: true });
   const ws = wb.Sheets['入力_出力'];
@@ -49,6 +132,17 @@ export function StaminaCalculator(input: any) {
   // Set Optional Inputs
   ws[mood].v = input.mood ?? 'Awful';
   ws[style].v = input.style ?? BestStyleAptitude(input);
+
+  // Process Recovery Skills
+  const skillCounts = ProcessRecoverySkills(input.skills);
+  ws[recovery.Recovery015].v = skillCounts.Recovery015;
+  ws[recovery.Recovery035].v = skillCounts.Recovery035;
+  ws[recovery.Recovery055].v = skillCounts.Recovery055;
+  ws[recovery.CustomRecovery].v = skillCounts.CustomRecoveryPercent;
+  ws[recovery.uniques_inherited].v = skillCounts.uniques_inherited;
+  ws[recovery.uniques_1].v = skillCounts.uniques_1_2;
+  ws[recovery.uniques_2].v = skillCounts.uniques_1_2;
+  ws[recovery.uniques_3].v = skillCounts.uniques_3_plus;
 
   let race_info = input.race ?? getChampionsMeeting();
   if (input.race?.name) {
