@@ -67,20 +67,25 @@ export async function rating_calculator(input: any) {
   if (input.skills?.length > 0) {
     for (const skill of input.skills) {
       try {
-        if (skills[skill].rarity === 'unique' && skills[skill].umamusume === input.umamusume) {
-          continue;
+        const { aptitude, base, rarity, umamusume } = skills[skill];
+        if (rarity === 'unique') {
+          const su = umamusume.toLowerCase();
+          const iu = input.umamusume.toLowerCase();
+          if (su.startsWith(iu)) {
+            continue;
+          }
         }
 
-        if (skills[skill].aptitude) {
-          const aptitude_group = Aptitudes(input[skills[skill].aptitude.toLowerCase()]);
+        if (aptitude) {
+          const aptitude_group = Aptitudes(input[aptitude.toLowerCase()]);
           const value = skills[skill][aptitude_group];
-          const score = Number.isNaN(value) ? skills[skill].base : value;
+          const score = Number.isNaN(value) ? base : value;
           console.log(`skill: ${skill} | score: ${score}`);
           total_skill_score += score;
           raw.skills[skill] = score;
         } else {
-          total_skill_score += skills[skill].base;
-          raw.skills[skill] = skills[skill].base;
+          total_skill_score += base;
+          raw.skills[skill] = base;
         }
       } catch (error) {
         throw `Invalid Skill Name: [${skill}] Is it missing symbols? [=-!,☆∴∞;#♪(ﾟ∀ﾟ)♡○◎×/]`;
