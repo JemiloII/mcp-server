@@ -38,8 +38,8 @@ export const inputSchema = z.object({
 });
 
 export const outputSchema = z.object({
-  rating: z.enum([ 'SS+', 'SS', 'S+', 'S', 'A+', 'A', 'B+', 'B', 'C+', 'C', 'D+', 'D', 'E+', 'E', 'F+', 'F', 'G+', 'G' ]),
-  total_score: z.number(),
+  rating: z.enum([ 'SS+', 'SS', 'S+', 'S', 'A+', 'A', 'B+', 'B', 'C+', 'C', 'D+', 'D', 'E+', 'E', 'F+', 'F', 'G+', 'G' ]).describe('Always show. This is the Rating Letter.'),
+  total_score: z.number().describe('Always show. This is the rating score.'),
   next_rank: z.number(),
-  raw: z.object({}).passthrough().optional()
+  raw: z.object({}).passthrough().optional().describe('Contains values that contributed to the total_score.')
 });

@@ -74,7 +74,7 @@ export async function rating_calculator(input: any) {
         if (skills[skill].aptitude) {
           const aptitude_group = Aptitudes(input[skills[skill].aptitude.toLowerCase()]);
           const value = skills[skill][aptitude_group];
-          const score = Number.isNaN(value) ? value : skills[skill].base;
+          const score = Number.isNaN(value) ? skills[skill].base : value;
           console.log(`skill: ${skill} | score: ${score}`);
           total_skill_score += score;
           raw.skills[skill] = score;
