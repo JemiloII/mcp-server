@@ -33,7 +33,7 @@ export const inputSchema = z.object({
   umamusume: z.enum(Array.from(characters) as unknown as readonly [ string, ...string[] ]).describe('Name of the Umamusume. Epithet is not a name, characters within brackets [] are not a name.'),
   uma_star_level: z.number().min(1).max(5).describe('This is the total number of yellow overlapping stars under the umamusume icon. Ask the user if you get confused.'),
   unique_skill_level: z.number().min(1).max(6).describe('This is the Lvl # that you see on the first skill in the list.'),
-  skills: z.array(z.string()).describe(`Array of skill names. Make sure to include special characters when you see them. Special Characters: "${special}". Do not include skill level in the skill list name. The follow is an example and not a pattern: ["Victoria por plancha ☆", "Right-Handed ◎", "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆", "Breath of Fresh Air"]`),
+  skills: z.array(z.string()).describe(`Array of skill names and requires at least 1 skill. Make sure to include special characters when you see them. Special Characters: "${special}". Do not include skill level in the skill list name. The follow is an example and not a pattern: ["Victoria por plancha ☆", "Right-Handed ◎", "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆", "Breath of Fresh Air"]`),
   output_raw: z.boolean().default(false).optional(),
 });
 
