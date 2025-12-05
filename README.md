@@ -191,10 +191,6 @@ mcp-server/
 - Check that the MCP discovery endpoint returns valid JSON
 - Verify protocol version compatibility
 
-## 📄 License
-
-[Your License Here]
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
