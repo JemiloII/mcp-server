@@ -1,0 +1,3174 @@
+{
+    "Be Still": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "Familiar Ground": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 217,
+        "aptitude": "Dirt"
+    },
+    "Free-Spirited": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Long"
+    },
+    "Ignited Spirit STA": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 263
+    },
+    "Corner Recovery ○": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 217
+    },
+    "Straightaway Recovery": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 217
+    },
+    "Lay Low": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 217
+    },
+    "Pace Strategy": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 217
+    },
+    "Calm in a Crowd": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 217
+    },
+    "Stamina to Spare": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Pace"
+    },
+    "Preferred Position": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Pace"
+    },
+    "Standing By": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "End"
+    },
+    "Wait-and-See": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Sprint"
+    },
+    "Watchful Eye": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Mile"
+    },
+    "Rosy Outlook": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Deep Breaths": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Long"
+    },
+    "Extra Tank": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 217,
+        "aptitude": "Long"
+    },
+    "Soft Step": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Passing Pro": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Long"
+    },
+    "Moxie": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 152,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Front"
+    },
+    "Hydrate": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Pace"
+    },
+    "A Small Breather": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "After-School Stroll": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "End"
+    },
+    "Levelheaded": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "End"
+    },
+    "Triple 7s": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 217
+    },
+    "Shake It Out": {
+        "rarity": "common",
+        "category": "recovery",
+        "base": 217
+    },
+    "Burning Spirit SPD": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 633
+    },
+    "Burning Spirit STA": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 633
+    },
+    "Burning Spirit PWR": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 633
+    },
+    "Burning Spirit GUT": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 633
+    },
+    "Burning Spirit WIT": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 633
+    },
+    "Runaway": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 259,
+        "S-A": 407,
+        "B-C": 333,
+        "D-E-F": 296,
+        "G": 259,
+        "aptitude": "Front"
+    },
+    "Super Lucky Seven": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 334
+    },
+    "Fall Frenzy": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 461
+    },
+    "Spring Spectacle": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 461
+    },
+    "Right-Handed Demon": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 461
+    },
+    "Yodo Invicta": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 461
+    },
+    "Firm Course Menace": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 461
+    },
+    "Swinging Maestro": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "Breath of Fresh Air": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "Iron Will": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "Indomitable": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "Unruffled": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "Calm and Collected": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 457,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Pace"
+    },
+    "Race Planner": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 457,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Pace"
+    },
+    "Sleeping Lion": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "End"
+    },
+    "Keen Eye": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 457,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Mile"
+    },
+    "Trackblazer": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "Cooldown": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Long"
+    },
+    "Adrenaline Rush": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508,
+        "aptitude": "Long"
+    },
+    "Miraculous Step": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "Restless": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 356,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Front"
+    },
+    "Gourmand": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 457,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Pace"
+    },
+    "Relax": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Late"
+    },
+    "Go-Home Specialist": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "End"
+    },
+    "Serenity": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "End"
+    },
+    "Lie in Wait": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Late"
+    },
+    "VIP Pass": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Long"
+    },
+    "Of Calm Mind": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Long"
+    },
+    "Master of the Sands": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508,
+        "aptitude": "Dirt"
+    },
+    "Professor of Curvature": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "Beeline Burst": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "It's On!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "In Body and Mind": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "Escape Artist": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 356,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Front"
+    },
+    "Speed Star": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 457,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Pace"
+    },
+    "Fast & Furious": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Late"
+    },
+    "Rising Dragon": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Late"
+    },
+    "Sturm und Drang": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "End"
+    },
+    "Blinding Flash": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Sprint"
+    },
+    "Mile Maven": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 457,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Mile"
+    },
+    "Killer Tunes": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "Unyielding": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "Innate Experience": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Long"
+    },
+    "Staggering Lead": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Sprint"
+    },
+    "Changing Gears": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 457,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Mile"
+    },
+    "Big-Sisterly": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 301,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "Mile"
+    },
+    "Vanguard Spirit": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Long"
+    },
+    "Overwhelming Pressure": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Long"
+    },
+    "15,000,000 CC": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 367,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "Late"
+    },
+    "Trending in the Charts!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508,
+        "aptitude": "Dirt"
+    },
+    "Corner Connoisseur": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "Rushing Gale!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "No Stopping Me!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 394
+    },
+    "Taking the Lead": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 234,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "Front"
+    },
+    "Unrestrained": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 356,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Front"
+    },
+    "On Your Left!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Late"
+    },
+    "Encroaching Shadow": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "aptitude": "End"
+    },
+    "Turbo Sprint": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Sprint"
+    },
+    "Furious Feat": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 457,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Mile"
+    },
+    "Plan X": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Sprint"
+    },
+    "Step on the Gas!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 457,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Mile"
+    },
+    "Technician": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 301,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "Pace"
+    },
+    "Determined Descent": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 301,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "Pace"
+    },
+    "Shatterproof": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 301,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "Pace"
+    },
+    "Hard Worker": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 367,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "Late"
+    },
+    "Center Stage": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 334
+    },
+    "Lane Legerdemain": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 334
+    },
+    "Perfect Prep!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 315,
+        "S-A": 433,
+        "B-C": 355,
+        "D-E-F": 315,
+        "G": 276,
+        "aptitude": "Sprint"
+    },
+    "Lightning Step": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 433,
+        "S-A": 433,
+        "B-C": 355,
+        "D-E-F": 315,
+        "G": 276,
+        "aptitude": "Medium"
+    },
+    "Sixth Sense": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 234,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "Front"
+    },
+    "Concentration": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 394
+    },
+    "Clairvoyance": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 367,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "Medium"
+    },
+    "The Bigger Picture": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 367,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "Late"
+    },
+    "The Coast Is Clear!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 267,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "End"
+    },
+    "Crusader": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 267,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "End"
+    },
+    "Superstan": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "Come What May": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "Tail Nine": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "Headliner": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Long"
+    },
+    "Daring Strike": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "End"
+    },
+    "Nothing Ventured": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 334
+    },
+    "Flash Forward": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "In High Spirits": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Sprint"
+    },
+    "Blast Forward": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Long"
+    },
+    "Top Runner": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 356,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Front"
+    },
+    "Burning Soul": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "Elated": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "Full of Vigor": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 457,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Mile"
+    },
+    "Dauntless": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Late"
+    },
+    "Wild Wind": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "See Ya Later!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "Keep Going!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Late"
+    },
+    "Moonlit Flash": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "End"
+    },
+    "Refraction Arc": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "From the Brink": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "Neck and Neck": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 457,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Pace"
+    },
+    "Lead the Charge!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 394,
+        "aptitude": "Dirt"
+    },
+    "Radiant Star": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 633
+    },
+    "Best in Japan": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Long"
+    },
+    "Tantalizing Trick": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 508
+    },
+    "Dominator": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "Petrifying Gaze": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "End"
+    },
+    "Adored by All": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 406,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Sprint"
+    },
+    "Battle Formation": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 457,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Mile"
+    },
+    "Mystifying Murmur": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Medium"
+    },
+    "Stamina Siphon": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 369,
+        "S-A": 507,
+        "B-C": 415,
+        "D-E-F": 369,
+        "G": 323,
+        "aptitude": "Long"
+    },
+    "All-Seeing Eyes": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 559,
+        "S-A": 559,
+        "B-C": 457,
+        "D-E-F": 406,
+        "G": 356,
+        "aptitude": "Late"
+    },
+    "Illusionist": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 267,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "Long"
+    },
+    "Dazzling Disorientation": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 301,
+        "S-A": 367,
+        "B-C": 301,
+        "D-E-F": 267,
+        "G": 234,
+        "aptitude": "Pace"
+    },
+    "Right-Handed ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Right-Handed ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Left-Handed ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Left-Handed ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Spring Runner ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Spring Runner ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Summer Runner ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Summer Runner ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Fall Runner ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Fall Runner ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Winter Runner ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Winter Runner ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Outer Post Proficiency ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Outer Post Proficiency ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Maverick ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Maverick ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Long Shot ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Long Shot ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Sympathy": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Lone Wolf": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Tokyo Racecourse ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Tokyo Racecourse ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Nakayama Racecourse ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Nakayama Racecourse ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Hanshin Racecourse ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Hanshin Racecourse ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Kyoto Racecourse ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Kyoto Racecourse ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Chukyo Racecourse ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Chukyo Racecourse ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Sapporo Racecourse ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Sapporo Racecourse ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Hakodate Racecourse ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Hakodate Racecourse ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Fukushima Racecourse ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Fukushima Racecourse ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Niigata Racecourse ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Niigata Racecourse ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Kokura Racecourse ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Kokura Racecourse ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Standard Distance ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Standard Distance ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Non-Standard Distance ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Non-Standard Distance ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Oi Racecourse ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Oi Racecourse ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Restraint": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Firm Conditions ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Firm Conditions ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Wet Conditions ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Wet Conditions ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Competitive Spirit ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Competitive Spirit ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Sunny Days ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Sunny Days ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Cloudy Days ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Cloudy Days ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Rainy Days ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Rainy Days ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Snowy Days ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Snowy Days ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Target in Sight ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Target in Sight ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Inner Post Proficiency ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Inner Post Proficiency ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Front Runner Savvy ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 152,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Front"
+    },
+    "Front Runner Savvy ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 122,
+        "S-A": 191,
+        "B-C": 157,
+        "D-E-F": 139,
+        "G": 122,
+        "aptitude": "Front"
+    },
+    "Pace Chaser Savvy ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Pace"
+    },
+    "Pace Chaser Savvy ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 157,
+        "S-A": 191,
+        "B-C": 157,
+        "D-E-F": 139,
+        "G": 122,
+        "aptitude": "Pace"
+    },
+    "Late Surger Savvy ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "Late Surger Savvy ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 191,
+        "S-A": 191,
+        "B-C": 157,
+        "D-E-F": 139,
+        "G": 122,
+        "aptitude": "Late"
+    },
+    "End Closer Savvy ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "End"
+    },
+    "End Closer Savvy ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 139,
+        "S-A": 191,
+        "B-C": 157,
+        "D-E-F": 139,
+        "G": 122,
+        "aptitude": "End"
+    },
+    "Lucky Seven": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Right-Handed ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Left-Handed ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Spring Runner ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Summer Runner ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Fall Runner ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Winter Runner ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Outer Post Averseness": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Inner Post Averseness": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "G1 Averseness": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Tokyo Racecourse ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Nakayama Racecourse ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Hanshin Racecourse ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Kyoto Racecourse ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Chukyo Racecourse ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Sapporo Racecourse ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Hakodate Racecourse ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Fukushima Racecourse ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Niigata Racecourse ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Kokura Racecourse ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Standard Distance ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Non-Standard Distance ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Paddock Fright": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Oi Racecourse ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Firm Conditions ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Wet Conditions ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Wallflower": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Rainy Days ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -129
+    },
+    "Corner Recovery ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -262
+    },
+    "Corner Adept ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -262
+    },
+    "Defeatist": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -262
+    },
+    "Corner Acceleration ×": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -262
+    },
+    "Gatekept": {
+        "rarity": "common",
+        "category": "detrimental",
+        "base": -174
+    },
+    "Hesitant Front Runners": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Hesitant Pace Chasers": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Hesitant Late Surgers": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Hesitant End Closers": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Intimidate": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 210,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Sprint"
+    },
+    "Speed Eater": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Mile"
+    },
+    "Tether": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Intense Gaze": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "End"
+    },
+    "Opening Gambit": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Mile"
+    },
+    "Restart": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 152,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Front"
+    },
+    "Frenzied Front Runners": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 174
+    },
+    "Frenzied Pace Chasers": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 174
+    },
+    "Frenzied Late Surgers": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 174
+    },
+    "Frenzied End Closers": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 174
+    },
+    "Trick (Front)": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Trick (Rear)": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Subdued Front Runners": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Flustered Front Runners": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Subdued Pace Chasers": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Flustered Pace Chasers": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Subdued Late Surgers": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Flustered Late Surgers": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Subdued End Closers": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Flustered End Closers": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 217
+    },
+    "Stop Right There!": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 210,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Sprint"
+    },
+    "Murmur": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Stamina Eater": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Long"
+    },
+    "Sharp Gaze": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "Smoke Screen": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 103,
+        "S-A": 142,
+        "B-C": 116,
+        "D-E-F": 103,
+        "G": 90,
+        "aptitude": "Long"
+    },
+    "Disorient": {
+        "rarity": "common",
+        "category": "debuff",
+        "base": 77,
+        "S-A": 94,
+        "B-C": 77,
+        "D-E-F": 68,
+        "G": 60,
+        "aptitude": "Pace"
+    },
+    "Ignited Spirit SPD": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 263
+    },
+    "Ignited Spirit PWR": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 263
+    },
+    "Ignited Spirit GUT": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 263
+    },
+    "Ignited Spirit WIT": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 263
+    },
+    "Corner Adept ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Straightaway Adept": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Ramp Up": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Homestretch Haste": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Fast-Paced": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 152,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Front"
+    },
+    "Prepared to Pass": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Pace"
+    },
+    "Position Pilfer": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "Outer Swell": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "Masterful Gambit": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "End"
+    },
+    "Gap Closer": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Sprint"
+    },
+    "Productive Plan": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Mile"
+    },
+    "Up-Tempo": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Steadfast": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Inside Scoop": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Long"
+    },
+    "Sprint Straightaways ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 210,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Sprint"
+    },
+    "Sprint Straightaways ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Sprint"
+    },
+    "Sprint Corners ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 210,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Sprint"
+    },
+    "Sprint Corners ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Sprint"
+    },
+    "Huge Lead": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 210,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Sprint"
+    },
+    "Mile Straightaways ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 236,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Mile"
+    },
+    "Mile Straightaways ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Mile"
+    },
+    "Mile Corners ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 236,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Mile"
+    },
+    "Mile Corners ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Mile"
+    },
+    "Shifting Gears": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Mile"
+    },
+    "Unyielding Spirit": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Mile"
+    },
+    "Medium Straightaways ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 288,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Medium"
+    },
+    "Medium Straightaways ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Medium Corners ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 288,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Medium"
+    },
+    "Medium Corners ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Long Straightaways ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 210,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Long"
+    },
+    "Long Straightaways ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Long"
+    },
+    "Long Corners ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 210,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Long"
+    },
+    "Long Corners ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Long"
+    },
+    "Keeping the Lead": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Long"
+    },
+    "Pressure": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Long"
+    },
+    "Front Runner Straightaways ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 183,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Front"
+    },
+    "Front Runner Straightaways ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 152,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Front"
+    },
+    "Front Runner Corners ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 183,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Front"
+    },
+    "Front Runner Corners ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 152,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Front"
+    },
+    "Leader's Pride": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 152,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Front"
+    },
+    "Pace Chaser Straightaways ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 236,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Pace"
+    },
+    "Pace Chaser Straightaways ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Pace"
+    },
+    "Pace Chaser Corners ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 236,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Pace"
+    },
+    "Pace Chaser Corners ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Pace"
+    },
+    "Late Surger Straightaways ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 288,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Late"
+    },
+    "Late Surger Straightaways ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "Later Surger Corners ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 288,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "Late"
+    },
+    "Late Surger Corners ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "1,500,000 CC": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "End Closer Straightaways ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 210,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "End"
+    },
+    "End Closer Straightaways ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "End"
+    },
+    "End Closer Corners ◎": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 210,
+        "S-A": 288,
+        "B-C": 236,
+        "D-E-F": 210,
+        "G": 183,
+        "aptitude": "End"
+    },
+    "End Closer Corners ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "End"
+    },
+    "Uma Stan": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Tail Held High": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Slipstream": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Playtime's Over!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Top Pick": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217,
+        "aptitude": "Dirt"
+    },
+    "Corner Acceleration ○": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Straightaway Acceleration": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Nimble Navigator": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174
+    },
+    "Early Lead": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 152,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Front"
+    },
+    "Final Push": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 152,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Front"
+    },
+    "Head-On": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Pace"
+    },
+    "Slick Surge": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "Straightaway Spurt": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "aptitude": "End"
+    },
+    "Sprinting Gear": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Sprint"
+    },
+    "Updrafters": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Mile"
+    },
+    "Countermeasure": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Sprint"
+    },
+    "Acceleration": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "aptitude": "Mile"
+    },
+    "Second Wind": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 152,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Front"
+    },
+    "Shrewd Step": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Pace"
+    },
+    "Straight Descent": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Pace"
+    },
+    "Tactical Tweak": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Pace"
+    },
+    "Fighter": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "Highlander": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Groundwork": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Prudent Positioning": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Go with the Flow": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Meticulous Measures": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 139,
+        "S-A": 191,
+        "B-C": 157,
+        "D-E-F": 139,
+        "G": 122,
+        "aptitude": "Sprint"
+    },
+    "Thunderbolt Step": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 191,
+        "S-A": 191,
+        "B-C": 157,
+        "D-E-F": 139,
+        "G": 122,
+        "aptitude": "Medium"
+    },
+    "Dodging Danger": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 90,
+        "S-A": 143,
+        "B-C": 116,
+        "D-E-F": 103,
+        "G": 90,
+        "aptitude": "Front"
+    },
+    "Focus": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Hawkeye": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 142,
+        "S-A": 142,
+        "B-C": 116,
+        "D-E-F": 103,
+        "G": 90,
+        "aptitude": "Medium"
+    },
+    "Studious": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 94,
+        "S-A": 94,
+        "B-C": 77,
+        "D-E-F": 68,
+        "G": 60,
+        "aptitude": "Late"
+    },
+    "I Can See Right Through You": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 68,
+        "S-A": 94,
+        "B-C": 77,
+        "D-E-F": 68,
+        "G": 60,
+        "aptitude": "End"
+    },
+    "Strategist": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 68,
+        "S-A": 94,
+        "B-C": 77,
+        "D-E-F": 68,
+        "G": 60,
+        "aptitude": "End"
+    },
+    "All I've Got": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Feature Act": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Long"
+    },
+    "Early Start": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "End"
+    },
+    "Risky Business": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 129
+    },
+    "Light as a Feather": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Sprint"
+    },
+    "Fighting Spirit": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Eager": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Pumped": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 195,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Mile"
+    },
+    "Fearless": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "With All My Soul": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Full Throttle": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Late"
+    },
+    "Downhill Speedster": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 217
+    },
+    "Take the Chance": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 239,
+        "S-A": 239,
+        "B-C": 195,
+        "D-E-F": 174,
+        "G": 152,
+        "aptitude": "Medium"
+    },
+    "Forward, March!": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 174,
+        "aptitude": "Dirt"
+    },
+    "Glittering Star": {
+        "rarity": "common",
+        "category": "standard",
+        "base": 263
+    },
+    "U=ma2": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Agnes Tachyon",
+        "category": "recovery"
+    },
+    "Pure Heart": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Super Creek",
+        "category": "recovery"
+    },
+    "Super-Duper Climax": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Haru Urara",
+        "category": "recovery"
+    },
+    "Certain Victory": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Tokai Teio (Anime)"
+    },
+    "Legacy of the Strong": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Mejiro McQueen (Anime)"
+    },
+    "Shooting Star": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Special Week"
+    },
+    "The View from the Lead Is Mine!": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Silence Suzuka"
+    },
+    "Sky-High Teio Step": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Tokai Teio"
+    },
+    "Triumphant Pulse": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Oguri Cap"
+    },
+    "Anchors Aweigh!": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Gold Ship"
+    },
+    "Cut and Drive!": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Vodka"
+    },
+    "Resplendent Red Ace": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Daiwa Scarlet"
+    },
+    "Where There's a Will, There's a Way": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Grass Wonder"
+    },
+    "The Duty of Dignity Calls": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Mejiro McQueen"
+    },
+    "Victoria por plancha ☆": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "El Condor Pasa"
+    },
+    "This Dance Is for Vittoria!": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "T.M. Opera O"
+    },
+    "Behold Thine Emperor's Divine Might": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Symboli Rudolf"
+    },
+    "Blazing Pride": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Air Groove"
+    },
+    "∴win Q.E.D.": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Biwa Hayahide"
+    },
+    "Flashy☆Landing": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Mayano Top Gun"
+    },
+    "G00 1st. F∞;": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Mihono Bourbon"
+    },
+    "Blue Rose Closer": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Rice Shower"
+    },
+    "Our Ticket to Win!": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Winning Ticket"
+    },
+    "Genius x Bakushin = Victory": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Sakura Bakushin O"
+    },
+    "I See Victory in My Future!": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Matikanefukukitaru"
+    },
+    "Just a Little Farther!": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Nice Nature"
+    },
+    "Prideful King": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "King Halo"
+    },
+    "#LookatCurren": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Curren Chan"
+    },
+    "Red Shift/LP1211-M": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Maruzensky"
+    },
+    "Shooting for Victory!": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Taiki Shuttle"
+    },
+    "Let's Pump Some Iron!": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Mejiro Ryan"
+    },
+    "Nemesis": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Narita Taishin"
+    },
+    "SPARKLY☆STARDOM": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Smart Falcon"
+    },
+    "Shadow Break": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Narita Brian"
+    },
+    "Eternal Moments": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Air Groove (Wedding)"
+    },
+    "Flowery☆Maneuver": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Mayano Top Gun (Wedding)"
+    },
+    "Angling and Scheming": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Seiun Sky"
+    },
+    "You and Me! One-on-One!": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Hishi Amazon"
+    },
+    "Condor's Fury": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "El Condor Pasa (Fantasy)"
+    },
+    "Superior Heal": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Grass Wonder (Fantasy)",
+        "category": "recovery"
+    },
+    "Lights of Vaudeville": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Fuji Kiseki"
+    },
+    "KEEP IT REAL.": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Gold City"
+    },
+    "Dazzl'n ♪ Diver": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Special Week (Summer)",
+        "category": "recovery"
+    },
+    "A Kiss for Courage": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Maruzensky (Summer)"
+    },
+    "I Never Goof Up!": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Meisho Doto"
+    },
+    "Schwarzes Schwert": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Eishin Flash"
+    },
+    "Bountiful Harvest": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Matikanefukukitaru (Full Armor)"
+    },
+    "YUMMY☆SPEED!\n": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Hishi Akebono"
+    },
+    "OMG! (ﾟ∀ﾟ) The Final Sprint! ☆": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Agnes Digital"
+    },
+    "Give Mummy a Hug ♡": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Super Creek (Halloween)"
+    },
+    "Every Rose Has Its Fangs": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Rice Shower (Halloween)",
+        "category": "recovery"
+    },
+    "A Princess Must Seize Victory!": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Kawakami Princess"
+    },
+    "Chasing After You": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Manhattan Cafe"
+    },
+    "Arrows Whistle, Shadows Disperse": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Symboli Rudolf (Festival)"
+    },
+    "Dancing in the Leaves": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Gold City (Festival)"
+    },
+    "Pop & Polish": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Tosen Jordan"
+    },
+    "Moving Past, and Beyond": {
+        "rarity": "unique",
+        "base": 180,
+        "umamusume": "Mejiro Dober"
+    }
+}

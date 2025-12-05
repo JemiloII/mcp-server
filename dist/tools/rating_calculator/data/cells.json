@@ -1,0 +1,11 @@
+{
+    "skills": {
+        "row_start": 5,
+        "row_end": 47,
+        "type_col": "H",
+        "name_col": "I",
+        "score_col": "K"
+    },
+    "version": "C28",
+    "latest": "Main!C29"
+}
