@@ -15,33 +15,104 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            /* Umamusume-themed background */
+            background: linear-gradient(135deg, #87CEEB 0%, #98D8C8 50%, #FFB6C1 100%);
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+                url('images/umamusume-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Animated background elements (racing track stripes) */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 50px,
+                rgba(255, 255, 255, 0.05) 50px,
+                rgba(255, 255, 255, 0.05) 100px
+            );
+            pointer-events: none;
+            z-index: 0;
         }
 
         .container {
             max-width: 900px;
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             overflow: hidden;
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Haru Urara character image */
+        .haru-urara {
+            position: fixed;
+            bottom: 0;
+            right: 5%;
+            width: 400px;
+            height: auto;
+            z-index: 2;
+            pointer-events: none;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .haru-urara {
+                width: 250px;
+                right: 2%;
+            }
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 50%, #C71585 100%);
             color: white;
             padding: 40px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '🏇✨';
+            position: absolute;
+            font-size: 4em;
+            top: -20px;
+            right: -20px;
+            opacity: 0.2;
         }
 
         .header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
             font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .header p {
@@ -55,13 +126,14 @@
 
         .status-badge {
             display: inline-block;
-            background: #10b981;
+            background: linear-gradient(135deg, #FFB6C1 0%, #FF69B4 100%);
             color: white;
             padding: 8px 16px;
             border-radius: 20px;
             font-size: 0.9em;
             font-weight: 600;
             margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(255, 105, 180, 0.3);
         }
 
         .section {
@@ -69,7 +141,7 @@
         }
 
         .section h2 {
-            color: #667eea;
+            color: #FF1493;
             font-size: 1.8em;
             margin-bottom: 15px;
             display: flex;
@@ -77,7 +149,7 @@
         }
 
         .section h2::before {
-            content: "⚡";
+            content: "✨";
             margin-right: 10px;
         }
 
@@ -89,21 +161,21 @@
         }
 
         .tool-card {
-            background: #f8f9fa;
-            border: 2px solid #e9ecef;
+            background: linear-gradient(135deg, #FFF0F5 0%, #FFE4E1 100%);
+            border: 2px solid #FFB6C1;
             border-radius: 12px;
             padding: 20px;
             transition: all 0.3s ease;
         }
 
         .tool-card:hover {
-            border-color: #667eea;
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+            border-color: #FF69B4;
+            box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
             transform: translateY(-2px);
         }
 
         .tool-card h3 {
-            color: #667eea;
+            color: #FF1493;
             font-size: 1.3em;
             margin-bottom: 10px;
         }
@@ -114,8 +186,8 @@
         }
 
         .setup-steps {
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
+            background: linear-gradient(135deg, #FFF5F7 0%, #FFF0F5 100%);
+            border-left: 4px solid #FF69B4;
             padding: 20px;
             border-radius: 8px;
         }
@@ -131,11 +203,11 @@
         }
 
         .setup-steps code {
-            background: #e9ecef;
+            background: #212529;
             padding: 3px 8px;
             border-radius: 4px;
             font-family: 'Courier New', monospace;
-            color: #d63384;
+            color: #00ff00;
             font-size: 0.9em;
         }
 
@@ -164,7 +236,7 @@
 
         .badge {
             display: inline-block;
-            background: #667eea;
+            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
             color: white;
             padding: 4px 10px;
             border-radius: 12px;
@@ -174,30 +246,34 @@
         }
 
         .info-box {
-            background: #e7f3ff;
-            border-left: 4px solid #0066cc;
+            background: linear-gradient(135deg, #FFF0F5 0%, #FFE4E1 100%);
+            border-left: 4px solid #FF69B4;
             padding: 15px;
             border-radius: 6px;
             margin-top: 15px;
         }
 
         .info-box p {
-            color: #004080;
+            color: #C71585;
             margin: 0;
         }
 
         a {
-            color: #667eea;
+            color: #FF1493;
             text-decoration: none;
             font-weight: 600;
         }
 
         a:hover {
             text-decoration: underline;
+            color: #FF69B4;
         }
     </style>
 </head>
 <body>
+    <!-- Haru Urara character image -->
+    <img src="images/haru-urara.png" alt="Haru Urara" class="haru-urara">
+
     <div class="container">
         <div class="header">
             <h1>🏇 Umamusume Trainer</h1>
@@ -237,7 +313,7 @@
                     </ol>
 
                     <div class="endpoint-box">
-                        <code>https://umamusume.training/.well-known/mcp.json</code>
+                        <code>https://umamusume.training</code>
                     </div>
 
                     <div class="info-box">
@@ -249,9 +325,22 @@
                     <p><strong>For Claude Desktop:</strong></p>
                     <ol>
                         <li>Open Claude Desktop settings</li>
-                        <li>Navigate to the <strong>MCP Servers</strong> section</li>
-                        <li>Add a new server configuration with your endpoint URL</li>
-                        <li>Restart Claude Desktop to activate the connection</li>
+                        <li>Navigate to <strong>Developer</strong> → <strong>Edit Config</strong></li>
+                        <li>Add the server configuration to <code>claude_desktop_config.json</code>:</li>
+                    </ol>
+
+                    <div class="endpoint-box">
+<code>{
+  "mcpServers": {
+    "umamusume-trainer": {
+      "url": "https://umamusume.training"
+    }
+  }
+}</code>
+                    </div>
+
+                    <ol start="4">
+                        <li style="margin-top: 15px;">Restart Claude Desktop to activate the connection</li>
                     </ol>
                 </div>
             </div>
