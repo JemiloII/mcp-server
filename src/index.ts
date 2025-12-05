@@ -1,4 +1,5 @@
 import { fileURLToPath } from 'url';
+import { readFile } from 'fs/promises';
 import { Hono, type Context } from 'hono';
 import { cors } from 'hono/cors';
 import { logger } from 'hono/logger';
@@ -76,6 +77,19 @@ app.get('/.well-known/mcp.json', (c) =>
 app.get('/health', (c) => c.json({ status: 'ok', ts: new Date().toISOString() }));
 
 app.on(['GET', 'POST', 'OPTIONS'], ['/', '/mcp'], async (c: Context) => {
+  // Browser requests get the homepage
+  if (c.req.method === 'GET' && c.req.path === '/') {
+    const acceptHeader = c.req.header('accept') || '';
+    if (acceptHeader.includes('text/html')) {
+      try {
+        const html = await readFile('./public/index.html', 'utf-8');
+        return c.html(html);
+      } catch (error) {
+        // Homepage missing, use MCP handler
+      }
+    }
+  }
+
   await ensureConnected();
   const response = await transport.handleRequest(c);
 
