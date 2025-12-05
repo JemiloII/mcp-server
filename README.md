@@ -28,7 +28,7 @@ Check if your Umamusume has sufficient stamina for a Champions Meeting Cup:
 
 ### Prerequisites
 - Node.js >= 24.0.0
-- npm or pnpm package manager
+- pnpm package manager
 
 ### Installation
 
@@ -40,19 +40,17 @@ Check if your Umamusume has sufficient stamina for a Champions Meeting Cup:
 
 2. **Install dependencies**
    ```bash
-   npm install
-   # or
    pnpm install
    ```
 
 3. **Build the project**
    ```bash
-   npm run build
+   pnpm run build
    ```
 
 4. **Start the server**
    ```bash
-   npm run server
+   pnpm run server
    ```
 
    The server will start on `http://localhost:5096`
@@ -60,7 +58,7 @@ Check if your Umamusume has sufficient stamina for a Champions Meeting Cup:
 ### Development Mode
 For development with hot reload:
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ## 🌐 Using with Claude
@@ -168,10 +166,10 @@ mcp-server/
 ```
 
 ### Available Scripts
-- `npm run dev` - Development mode with hot reload
-- `npm run build` - Build TypeScript to JavaScript
-- `npm run start` - Start production server
-- `npm run server` - Start development server with env file
+- `pnpm run dev` - Development mode with hot reload
+- `pnpm run build` - Build TypeScript to JavaScript
+- `pnpm run start` - Start production server
+- `pnpm run server` - Start development server with env file
 
 ## 🔧 Troubleshooting
 
