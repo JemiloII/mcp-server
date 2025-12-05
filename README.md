@@ -95,15 +95,13 @@ npm run dev
 2. Open any conversation
 3. Click the **MCP** icon (puzzle piece) in the input area
 4. Click **"Add Server"**
-5. Enter your server's MCP discovery URL:
+5. Enter the MCP discovery URL:
    ```
-   https://your-domain.com/.well-known/mcp.json
+   https://umamusume.training/.well-known/mcp.json
    ```
 6. The server will connect automatically
 
 ### Option 2: Claude Desktop
-
-Claude Desktop can connect to localhost directly without HTTPS.
 
 #### macOS/Linux Configuration
 
@@ -115,7 +113,7 @@ Claude Desktop can connect to localhost directly without HTTPS.
 {
   "mcpServers": {
     "umamusume-trainer": {
-      "url": "http://localhost:5096/mcp"
+      "url": "https://umamusume.training/mcp"
     }
   }
 }
@@ -183,7 +181,7 @@ mcp-server/
 - Check that ports 80 or 443 are properly forwarded
 
 ### Server won't connect to Claude Desktop
-- Verify the server is running on `localhost:5096`
+- Verify the URL in your config matches `https://umamusume.training/mcp`
 - Check the config file path and JSON syntax
 - Restart Claude Desktop after configuration changes
 - Check logs in Claude Desktop's developer console
