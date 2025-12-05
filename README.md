@@ -113,7 +113,7 @@ npm run dev
 {
   "mcpServers": {
     "umamusume-trainer": {
-      "url": "https://umamusume.training/mcp"
+      "url": "https://umamusume.training"
     }
   }
 }
@@ -181,7 +181,7 @@ mcp-server/
 - Check that ports 80 or 443 are properly forwarded
 
 ### Server won't connect to Claude Desktop
-- Verify the URL in your config matches `https://umamusume.training/mcp`
+- Verify the URL in your config matches `https://umamusume.training`
 - Check the config file path and JSON syntax
 - Restart Claude Desktop after configuration changes
 - Check logs in Claude Desktop's developer console
