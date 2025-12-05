@@ -6,7 +6,7 @@ import { logger } from 'hono/logger';
 import { serveStatic } from '@hono/node-server/serve-static';
 import { StreamableHTTPTransport } from '@hono/mcp';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import { registerTools } from './tools';
+import { registerTools } from './tools/index.js';
 
 const SUPPORTED_PROTOCOL = ['2025-06-18'];
 const mcp = new McpServer({ name: 'Umamusume Trainer', version: '1.0.1' });
