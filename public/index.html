@@ -133,7 +133,6 @@
             border-radius: 20px;
             font-size: 0.9em;
             font-weight: 600;
-            margin-bottom: 30px;
             box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
         }
 
@@ -141,10 +140,17 @@
             margin-bottom: 40px;
         }
 
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
         .section h2 {
             color: #FF1493;
             font-size: 1.8em;
-            margin-bottom: 15px;
+            margin-bottom: 0;
             display: flex;
             align-items: center;
         }
@@ -282,10 +288,11 @@
         </div>
 
         <div class="content">
-            <div class="status-badge">✓ Server Running</div>
-
             <div class="section">
-                <h2>Available Tools</h2>
+                <div class="section-header">
+                    <h2>Available Tools</h2>
+                    <div class="status-badge">✓ Server Running</div>
+                </div>
                 <div class="tools-grid">
                     <div class="tool-card">
                         <h3>🏆 Champions Meeting</h3>
