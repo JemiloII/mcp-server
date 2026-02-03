@@ -128,7 +128,7 @@
   "Extra Tank": {
     "rarity": "common",
     "category": "recovery",
-    "base": 217,
+    "base": 174,
     "aptitude": "Long"
   },
   "Soft Step": {
@@ -364,7 +364,7 @@
   "Adrenaline Rush": {
     "rarity": "common",
     "category": "standard",
-    "base": 508,
+    "base": 406,
     "aptitude": "Long"
   },
   "Miraculous Step": {

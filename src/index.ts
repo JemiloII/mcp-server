@@ -56,6 +56,7 @@ app.use('/favicon.ico', serveStatic({
   path: fileURLToPath(new URL('./favicon.ico', import.meta.url))
 }));
 app.use('/images/*', serveStatic({ root: './public' }));
+app.use('/styles/*', serveStatic({ root: './public' }));
 
 app.use('*', cors({
   origin: (origin) => origin ?? '*',
